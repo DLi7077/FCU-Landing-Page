@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #84008f;
-  height: 100%;
+  height: 4rem;
+  border-bottom: 2px solid white;
 }
 
 .redirects {

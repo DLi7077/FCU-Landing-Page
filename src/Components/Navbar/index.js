@@ -1,13 +1,15 @@
 import React from "react";
 import "./styles.css";
-import CarRentalIcon from "@mui/icons-material/CarRental";
-import SavingsIcon from "@mui/icons-material/Savings";
 import icon from "../../Assets/nyu_icon.svg";
 
 export default function Navbar() {
   const headers = ["Loans", "Eligibility", "Forms"];
-  const headerLinks = headers.map((header) => {
-    return <div className="text">{header}</div>;
+  const headerLinks = headers.map((header, idx) => {
+    return (
+      <div key={idx} className="text">
+        {header}
+      </div>
+    );
   });
 
   return (

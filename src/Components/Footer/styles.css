@@ -1,13 +1,15 @@
 .footer {
   color: white;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 2rem;
   background-color: #232629;
-  margin-top: auto;
-  padding: 2rem;
+  
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 2rem;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .fcu-logo {
