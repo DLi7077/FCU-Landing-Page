@@ -16,6 +16,9 @@ export default function Navbar() {
         <img src={icon} />
         <div className="redirects">{headerLinks}</div>
       </div>
+      <div className="sign-up">
+        <div className="text">Sign up</div>
+      </div>
     </div>
   );
 }
