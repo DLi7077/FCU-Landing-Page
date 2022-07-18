@@ -26,14 +26,22 @@ export default function index(props) {
     "WEBSITE ACCESSIBILITY",
   ];
 
-  const addressText = addressInfo.map((address) => {
-    return <div>{address}</div>;
+  const addressText = addressInfo.map((address, idx) => {
+    return <div key={idx}>{address}</div>;
   });
-  const otherText = otherInfo.map((other) => {
-    return <div style={{ fontWeight: "400" }}>{other}</div>;
+  const otherText = otherInfo.map((other, idx) => {
+    return (
+      <div key={idx} style={{ fontWeight: "400" }}>
+        {other}
+      </div>
+    );
   });
-  const redirectSection = redirects.map((redirect) => {
-    return <div style={{ padding: "1rem" }}>{redirect}</div>;
+  const redirectSection = redirects.map((redirect, idx) => {
+    return (
+      <div key={idx} style={{ padding: "1rem" }}>
+        {redirect}
+      </div>
+    );
   });
 
   return (

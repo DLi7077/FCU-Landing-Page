@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  overflow: hidden;
   text-align: center;
   color: black;
   font-size: 10rem;

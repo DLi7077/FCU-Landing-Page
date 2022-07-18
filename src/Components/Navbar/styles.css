@@ -1,8 +1,10 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #84008F;
-  height: 100%;
+  justify-content: space-between;
+  background-color: #84008f;
+  height: 4rem;
+  border-bottom: 2px solid white;
 }
 
 .redirects {
@@ -11,6 +13,11 @@
   align-items: center;
   align-content: center;
 }
+
+.sign-up {
+  margin-right: 2rem;
+}
+
 .text {
   color: white;
   font-size: 30px;

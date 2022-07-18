@@ -1,14 +1,20 @@
-import "./App.css";
-import Footer from "./Views/Footer";
-import Navbar from "./Views/Navbar";
-import Overlay from "./Views/Overlay";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Pages from "./Pages";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 function App() {
+  const routeLinks = Pages.map((page, idx) => {
+    return <Route key={idx} path={page.path} element={page.element} />;
+  });
+
   return (
     <>
-      <Navbar />
-      <Overlay />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>{routeLinks}</Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

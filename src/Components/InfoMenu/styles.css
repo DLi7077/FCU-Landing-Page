@@ -1,0 +1,6 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 6%
+}
+
