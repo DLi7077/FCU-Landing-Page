@@ -1,6 +1,6 @@
 .footer {
   color: white;
-  background-color: #84008f;
+  background-color: #232629;
   margin-top: auto;
   padding: 2rem;
   display: grid;
@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  margin-inline: auto;
 }
 
 .address-info {
@@ -23,7 +24,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 0.5rem;
 }
 
 .insurance-logo {
@@ -48,4 +48,14 @@
   display: flex;
   justify-content: space-around;
   margin-inline: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .redirect-section {
+    flex-wrap: wrap;
+  }
 }
