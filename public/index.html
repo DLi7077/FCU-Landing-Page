@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
+      name="NYU Federal Credit Union"
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -24,8 +24,34 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
+    <title>NYU Federal Credit Union</title></head
+  ><!--  Widget Code -->
+  <script type="text/javascript">
+    (function () {
+      window.acquire = window.acquire || [{ s: Date.now() }];
+
+      var load = function () {
+        var script = "https://28x0py.acquire.io/widget.js";
+        var x = document.createElement("script");
+        x.src = script;
+        x.async = true;
+        var sx = document.getElementsByTagName("script")[0];
+        sx.parentNode.insertBefore(x, sx);
+      };
+      if (document.readyState === "complete") load();
+      else if (window.addEventListener)
+        window.addEventListener("load", load, false);
+      else if (window.attachEvent) {
+        window.attachEvent("onload", load);
+      }
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.acquire.io?welcome" title="live chat software"
+      >Acquire</a
+    ></noscript
+  >
+  <!-- / Widget Code -->
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

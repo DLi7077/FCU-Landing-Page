@@ -1,6 +1,17 @@
 .info-container {
   display: flex;
   flex-direction: column;
-  margin-inline: 6%
+  width: 100%;
+  padding: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .cell-icon {
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cell-icon {
+    width: 75px;
+  }
+}

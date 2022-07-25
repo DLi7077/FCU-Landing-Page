@@ -25,7 +25,7 @@ export default function InfoMenu() {
       {/* <a href="#calendar">Calendar</a>
       <a href="#news">News</a> */}
       <Table>
-        <TableBody>
+        <TableBody sx={{ margin: 0 }}>
           <Calendar
             calendar={calendar}
             bold={classes.bold}
@@ -46,7 +46,7 @@ export default function InfoMenu() {
       <div
         style={{
           color: "#DD11DD",
-          marginInline: "20rem",
+          marginInline: "10%",
           marginTop: "2rem",
           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",
         }}
@@ -59,25 +59,32 @@ export default function InfoMenu() {
           Membership consists of at least a Savings Account with the NYU FCU.
           Click below to open your NYU FCU Savings account and become a member.
         </div>
-        <Button
-          style={{
-            backgroundColor: "#CC11DC",
-            width: "15rem",
-            height: "3rem",
-            border: 0,
-            borderRadius: 0,
-            color: "white",
-            fontSize: "1.5rem",
-            fontWeight: 300,
-            textTransform: "capitalize",
-            marginTop: "0.5rem",
-          }}
-          onClick={() => {
-            navigate("/");
-          }}
+        <a
+          href="https://www.mobicint.net/nyu/openAccount/start"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none" }}
         >
-          Become a Member
-        </Button>
+          <Button
+            style={{
+              backgroundColor: "#CC11DC",
+              width: "15rem",
+              height: "3rem",
+              border: 0,
+              borderRadius: 0,
+              color: "white",
+              fontSize: "1.5rem",
+              fontWeight: 300,
+              textTransform: "capitalize",
+              marginTop: "0.5rem",
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Become a Member
+          </Button>
+        </a>
       </div>
     </div>
   );

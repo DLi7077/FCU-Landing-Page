@@ -66,7 +66,7 @@ export const InfoMenuContent = {
           "Auto loans as low as 2% APR* for first 36 months on new and used auto purchases.",
         redirect: {
           label: "Apply for a Loan",
-          link: "/",
+          link: "https://www.mobicint.net/nyu/login/loanapp",
         },
       },
     ],

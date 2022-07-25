@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Collapse,
-  IconButton,
-  TableRow,
-  TableCell,
-} from "@mui/material";
+import { Box, Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 /**
@@ -20,9 +14,9 @@ export default function Calendar(props) {
     <>
       <div id="calendar"></div>
       <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
-        <TableCell sx={{ width: "200px" }}>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <img src={props.calendar.icon} />
+        <TableCell sx={{ width: "100px" }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img src={props.calendar.icon} className='cell-icon'/>
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>
@@ -59,7 +53,7 @@ export default function Calendar(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "18rem",
+                marginInline: "min(10%,12rem)",
                 paddingBottom: "2rem",
               }}
             >

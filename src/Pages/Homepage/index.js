@@ -14,7 +14,7 @@ const classes = {
     "&:hover": {
       backgroundColor: "rgba(100,100,100,.5)",
     },
-    fontSize: "48px",
+    fontSize: "3rem",
     fontWeight: 400,
     borderRadius: 0.5,
     textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -28,13 +28,26 @@ export default function Home(props) {
   const visit_img = <img src={visit_image} alt="visit" className="visit" />;
   const img_content = (
     <div className="image-content">
-      <div>
-        <div>Your stories and your goals</div>
-        <div style={{ fontFamily: "Pacifico", fontSize: "7rem" }}>Matter</div>
+      <div className="visit-text">Your stories and your goals</div>
+      <div className="fancy-text" style={{ fontFamily: "Pacifico" }}>
+        Matter
       </div>
       <div className="button-area">
-        <Button sx={classes.button}>Apply for a Loan</Button>
-        <Button sx={classes.button}>Become a member</Button>
+        <a
+          href="https://www.mobicint.net/nyu/login/loanapp"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <Button sx={classes.button}>Apply for a Loan</Button>
+        </a>
+        <a
+          href="https://www.mobicint.net/nyu/openAccount/start"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          <Button sx={classes.button}>Become a member</Button>
+        </a>
       </div>
     </div>
   );

@@ -24,9 +24,14 @@ export default function News(props) {
     <>
       <div id="news"></div>
       <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
-        <TableCell sx={{ width: "200px" }}>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <img src={props.news.icon} />
+        <TableCell sx={{ width: "100px" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img src={props.news.icon}  className='cell-icon'/>
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>
@@ -63,7 +68,7 @@ export default function News(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "18rem",
+                marginLeft: "min(10%,12rem)",
                 paddingBottom: "2rem",
               }}
             >

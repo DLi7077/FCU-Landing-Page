@@ -6,21 +6,59 @@
   height: 4rem;
   border-bottom: 2px solid white;
 }
-
 .redirects {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  padding-left: 2rem;
 }
-
 .sign-up {
   margin-right: 2rem;
 }
-
 .text {
   color: white;
   font-size: 30px;
   text-align: center;
-  padding-inline-start: 3rem;
+  padding-inline: 1rem;
+}
+.drop-down {
+  position: relative;
+  top: 0;
+  display: none;
+  background-color: #a100af;
+  z-index: 10;
+}
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .burger {
+    display: flex;
+  }
+  .redirects {
+    display: none;
+  }
+  .sign-up {
+    display: none;
+  }
+  .home-icon {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar {
+    justify-content: flex-start;
+  }
+  .drop-down {
+    display: flex;
+  }
+  .wrapper {
+    justify-content: center;
+    width: 100%;
+  }
 }

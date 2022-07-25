@@ -35,10 +35,10 @@ export default function Rates(props) {
   return (
     <>
       <div id="news"></div>
-      <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
-        <TableCell sx={{ width: "200px" }}>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <img src={props.news.icon} />
+      <TableRow sx={{ backgroundColor: "#d4d4d4", width: "100%" }}>
+        <TableCell sx={{ width: "100px" }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img src={props.news.icon} className="cell-icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>
@@ -75,7 +75,7 @@ export default function Rates(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "18rem",
+                marginLeft: "min(10%,12rem)",
                 paddingBottom: "2rem",
               }}
             >
@@ -87,25 +87,29 @@ export default function Rates(props) {
                     </div>
                     <div style={props.text}>{c.description}</div>
 
-                    <Button
-                      style={{
-                        backgroundColor: "#CC11DC",
-                        width: "15rem",
-                        height: "3rem",
-                        border: 0,
-                        borderRadius: 0,
-                        color: "white",
-                        fontSize: "1.5rem",
-                        fontWeight: 300,
-                        textTransform: "capitalize",
-                        marginTop: "0.5rem",
-                      }}
-                      onClick={() => {
-                        navigate(c.redirect.link);
-                      }}
+                    <a
+                      href={c.redirect.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ textDecoration: "none" }}
                     >
-                      {c.redirect.label}
-                    </Button>
+                      <Button
+                        style={{
+                          backgroundColor: "#CC11DC",
+                          width: "15rem",
+                          height: "3rem",
+                          border: 0,
+                          borderRadius: 0,
+                          color: "white",
+                          fontSize: "1.5rem",
+                          fontWeight: 300,
+                          textTransform: "capitalize",
+                          marginTop: "0.5rem",
+                        }}
+                      >
+                        {c.redirect.label}
+                      </Button>
+                    </a>
                   </div>
                 );
               })}

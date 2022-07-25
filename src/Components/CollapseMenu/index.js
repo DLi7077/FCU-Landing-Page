@@ -18,7 +18,7 @@ export default function Menu() {
   };
   //Rotates the arrow when selected
   const rotateArrow = (idx) => {
-    return idx === currDrop ? { transform: "rotate(180deg)" } : {};
+    return idx === currDrop ? { transform: "rotate(0deg)" } : {};
   };
 
   const collapseView = (
@@ -33,8 +33,6 @@ export default function Menu() {
             }}
             sx={Object.assign(selectedIcon(idx), {
               borderRadius: 0,
-              borderLeft: "1px solid purple",
-              borderRight: "1px solid purple",
               "&:hover": {
                 backgroundColor: "#cccccc",
               },
@@ -43,9 +41,11 @@ export default function Menu() {
               },
             })}
           >
-            <img src={content.icon} className="icon" />
-            <div className="icon-title">{content.label}</div>
-            <img src={arrow} className="arrow" style={rotateArrow(idx)} />
+            <>
+              <img src={content.icon} className="icon" />
+              <div className="icon-title">{content.label}</div>
+              <img src={arrow} className="arrow" style={rotateArrow(idx)} />
+            </>
           </Button>
         );
       })}

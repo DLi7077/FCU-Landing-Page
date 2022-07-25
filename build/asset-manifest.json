@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daffcf78.css",
+    "main.js": "/static/js/main.598b8f00.js",
+    "static/js/787.a0ad0ea4.chunk.js": "/static/js/787.a0ad0ea4.chunk.js",
+    "static/media/visit_image.jpg": "/static/media/visit_image.57b70bafc12c1394b877.jpg",
+    "static/media/beach.png": "/static/media/beach.0eb74af993bc5177813e.png",
+    "static/media/pacifico-all-400-normal.woff": "/static/media/pacifico-all-400-normal.8f19c0296562a647f0a0.woff",
+    "static/media/nyu_icon.svg": "/static/media/nyu_icon.df872de4589a18d7777d877ee7cdb8ce.svg",
+    "static/media/business.svg": "/static/media/business.93febdd0a823927c0d46bff53041dba6.svg",
+    "static/media/pacifico-latin-400-normal.woff2": "/static/media/pacifico-latin-400-normal.f36bb0347eecd87d78af.woff2",
+    "static/media/pacifico-latin-ext-400-normal.woff2": "/static/media/pacifico-latin-ext-400-normal.e12a2413eb43b100497c.woff2",
+    "static/media/pacifico-cyrillic-ext-400-normal.woff2": "/static/media/pacifico-cyrillic-ext-400-normal.682f9fb5d72ef074686d.woff2",
+    "static/media/pacifico-cyrillic-400-normal.woff2": "/static/media/pacifico-cyrillic-400-normal.12b0288f7a1df3155d42.woff2",
+    "static/media/about.svg": "/static/media/about.c936de1eb36db432fa076643788cc9cd.svg",
+    "static/media/nyu_fcu.svg": "/static/media/nyu_fcu.d4700f0a5a037352aaef205780faba08.svg",
+    "static/media/loans.svg": "/static/media/loans.653a11c2a8c1f7e4409246432eeab711.svg",
+    "static/media/insurance.svg": "/static/media/insurance.e3e57f894511ac25d9c257551299b7e6.svg",
+    "static/media/pacifico-vietnamese-400-normal.woff2": "/static/media/pacifico-vietnamese-400-normal.bd5387ce81f7c383a0a3.woff2",
+    "static/media/calendar.svg": "/static/media/calendar.ef17604546db8a35f6598a3cd546128c.svg",
+    "static/media/mortgage.svg": "/static/media/mortgage.2515437083a950222758e3bd955ff2a6.svg",
+    "static/media/savings.svg": "/static/media/savings.7f168609dd08daebb4fe473921aaf14a.svg",
+    "static/media/resources.svg": "/static/media/resources.bd105fb034818aadbcee1cfc534fc504.svg",
+    "static/media/arrow.svg": "/static/media/arrow.fafdb27c13894dabbc2a4bcfb5b2de94.svg",
+    "static/media/rates.svg": "/static/media/rates.dc37f5f7bd6133280a6d3ec0d4a4755b.svg",
+    "static/media/newspaper.svg": "/static/media/newspaper.e07de7db65cba569d69de333532b5e5a.svg",
+    "index.html": "/index.html",
+    "main.daffcf78.css.map": "/static/css/main.daffcf78.css.map",
+    "main.598b8f00.js.map": "/static/js/main.598b8f00.js.map",
+    "787.a0ad0ea4.chunk.js.map": "/static/js/787.a0ad0ea4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daffcf78.css",
+    "static/js/main.598b8f00.js"
+  ]
+}
