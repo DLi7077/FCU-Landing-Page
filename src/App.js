@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Pages from "./Pages";
 import Footer from "./Components/Footer";
@@ -14,16 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>{routeLinks}</Routes>
-        <div
-          style={{
-            position: "relative",
-            bottom: 0,
-            left: 0,
-            right: 0,
-          }}
-        >
-          <Footer />
-        </div>
+        <Footer />
       </Router>
     </>
   );

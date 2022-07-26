@@ -53,7 +53,7 @@ export default function Calendar(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginInline: "min(10%,12rem)",
+                marginLeft: "min(10%,12rem)",
                 paddingBottom: "2rem",
               }}
             >

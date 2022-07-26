@@ -12,7 +12,7 @@ const menuContent = [
     icon: about,
     redirects: [
       { label: "Join", link: "/join" },
-      { label: "About us", link: "/" },
+      { label: "About us", link: "/about-us" },
       { label: "Schedule", link: "/" },
       { label: "Locations", link: "/" },
       { label: "FAQ", link: "/" },

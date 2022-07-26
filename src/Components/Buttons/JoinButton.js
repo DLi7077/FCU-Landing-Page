@@ -3,12 +3,7 @@ import { Button } from "@mui/material";
 
 export default function JoinButton() {
   return (
-    <a
-      href="https://www.mobicint.net/nyu/openAccount/start"
-      target="_blank"
-      rel="noreferrer"
-      style={{ textDecoration: "none" }}
-    >
+    <div style={{ display: "block", textDecoration: "none", width: "100%" }}>
       <Button
         style={{
           backgroundColor: "#CC11DC",
@@ -22,8 +17,14 @@ export default function JoinButton() {
           marginTop: "0.5rem",
         }}
       >
+        <a
+          href="https://www.mobicint.net/nyu/openAccount/start"
+          target="_blank"
+          rel="noreferrer"
+          width={"100px"}
+        ></a>
         Become a Member &#8594;
       </Button>
-    </a>
+    </div>
   );
 }

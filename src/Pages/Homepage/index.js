@@ -44,6 +44,7 @@ export default function Home(props) {
         <a
           href="https://www.mobicint.net/nyu/openAccount/start"
           target="_blank"
+          rel="noreferrer"
           style={{ textDecoration: "none" }}
         >
           <Button sx={classes.button}>Become a member</Button>
