@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 2rem;
   background-color: #232629;
-  
+
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
