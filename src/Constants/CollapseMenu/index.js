@@ -11,7 +11,7 @@ const menuContent = [
     label: "About",
     icon: about,
     redirects: [
-      { label: "Join", link: "/Elaina" },
+      { label: "Join", link: "/join" },
       { label: "About us", link: "/" },
       { label: "Schedule", link: "/" },
       { label: "Locations", link: "/" },
