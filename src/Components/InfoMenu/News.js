@@ -22,7 +22,6 @@ export default function News(props) {
   const navigate = useNavigate();
   return (
     <>
-      <div id="news"></div>
       <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
         <TableCell sx={{ width: "100px" }}>
           <div
@@ -31,7 +30,7 @@ export default function News(props) {
               justifyContent: "center",
             }}
           >
-            <img src={props.news.icon}  className='cell-icon'/>
+            <img src={props.news.icon} className="cell-icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>

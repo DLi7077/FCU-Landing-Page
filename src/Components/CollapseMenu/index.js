@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
-import { Button, Link } from "@mui/material";
+import { Button } from "@mui/material";
 import menuContent from "../../Constants/CollapseMenu";
 import arrow from "../../Assets/menu_icons/arrow.svg";
 
 export default function Menu() {
   const [currDrop, setCurrDrop] = useState(-1);
-  const navigate = useNavigate();
+
+  /**
+   * @description Scroll to top of page on load
+   */
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleDropDown = (index) => {
     setCurrDrop(index === currDrop ? -1 : index);
@@ -54,19 +61,18 @@ export default function Menu() {
 
   const dropDownLinks = currDrop !== -1 && (
     <div className="dropdown-view">
-      {menuContent[currDrop].redirects.map((link, idx) => {
+      {menuContent[currDrop].redirects.map((page, idx) => {
         return (
-          <Link
+          <HashLink
             key={idx}
-            component="button"
-            underline="hover"
-            sx={{ width: "100%" }}
-            onClick={() => {
-              navigate(link.link);
+            smooth
+            to={{
+              pathname: page.link,
+              hash: page.hash ?? null,
             }}
           >
-            <div className="dropdown-text">{link.label} </div>
-          </Link>
+            <div className="dropdown-text">{page.label} </div>
+          </HashLink>
         );
       })}
     </div>

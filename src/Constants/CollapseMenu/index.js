@@ -13,11 +13,11 @@ const menuContent = [
     redirects: [
       { label: "Join", link: "/join" },
       { label: "About us", link: "/about-us" },
-      { label: "Schedule", link: "/" },
-      { label: "Locations", link: "/" },
-      { label: "FAQ", link: "/" },
-      { label: "Disclosures", link: "/" },
-      { label: "Contact us", link: "/" },
+      { label: "Schedule", link: "/", hash: "calendar" },
+      { label: "ATM Locations", link: "/atm-locations" },
+      { label: "FAQ", link: "/faq" },
+      { label: "Disclosures", link: "/disclosures" },
+      { label: "Contact us", link: "/contact-us" },
     ],
   },
   {

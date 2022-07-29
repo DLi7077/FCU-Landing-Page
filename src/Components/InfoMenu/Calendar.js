@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+
 /**
  * @description Collapsible row containing calendar and event details
  * @param {Object} props - An Object containing calendar and event info
@@ -12,11 +13,10 @@ export default function Calendar(props) {
 
   return (
     <>
-      <div id="calendar"></div>
-      <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
+      <TableRow id="calendar" sx={{ backgroundColor: "#d4d4d4" }}>
         <TableCell sx={{ width: "100px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={props.calendar.icon} className='cell-icon'/>
+            <img src={props.calendar.icon} className="cell-icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>

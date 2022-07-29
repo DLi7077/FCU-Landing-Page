@@ -1,5 +1,4 @@
 import React from "react";
-import Overlay from "../../Views/Overlay";
 import Menu from "../../Components/CollapseMenu";
 import "./styles.css";
 
@@ -16,7 +15,6 @@ export default function Layout(props) {
         <div className="content-body">
           <Menu />
           {props.content}
-          {/* <Overlay /> */}
         </div>
       </div>
     </>
