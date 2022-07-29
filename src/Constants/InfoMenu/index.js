@@ -9,15 +9,43 @@ export const InfoMenuContent = {
     title: "Calendar",
     content: [
       {
-        subtitle: "Hours and Holiday Schedule",
+        subtitle: "Closures",
         bullet_points: [
-          "Monday, September 5th - Closed",
-          "December 25th - Christmas",
+          "1/17/2022 - Martin Luther King- Closed",
+          "1/31/2022 - Mineola Branch Only Closed",
+          "2/21/2022 - President's Day- Closed",
+          "5/30/2022 - Memorial Day- Closed",
+          "6/20/2022 - Juneteenth Observed- Closed",
+          "7/4/2022 - Independence Day- Closed",
+          "9/5/2022 - Labor Day- Closed",
+          "10/10/2022 - Indigenous Peoples' Day- Closed",
+          "11/11/2022 - Veteran's Day- Closed",
+          "11/24/2022 - Thanksgiving- Closed",
+          "11/25/2022 - Thanksgiving (Day After)- Closed",
+          "12/26/2022 - Christmas Observed- Closed",
+          "1/2/2023 - New Year's Day Observed - Closed",
         ],
       },
       {
         subtitle: "Events",
         bullet_points: ["August 13 - SYEP Ends"],
+      },
+    ],
+    hours: [
+      {
+        branch_name: "NYC Branch",
+        times: [
+          "Monday, Wednesday, Thursday, Friday: 9am - 5pm",
+          "Tuesday: 9am - 3pm",
+        ],
+      },
+      {
+        branch_name: "Mineola Branch",
+        times: [
+          "Monday, Wednesday, and Thursday 9 am - 4 pm",
+          "Tuesday: 9am - 3pm",
+          "Friday 7 am - 2 pm",
+        ],
       },
     ],
   },

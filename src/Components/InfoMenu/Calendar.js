@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import "../../Pages/layout.css";
 
 /**
  * @description Collapsible row containing calendar and event details
@@ -55,12 +56,45 @@ export default function Calendar(props) {
                 flexDirection: "column",
                 marginLeft: "min(10%,12rem)",
                 paddingBottom: "2rem",
+                gap: "1rem",
+                fontSize: "1.5rem",
               }}
             >
+              <div className="subtitle">Hours of Operation</div>
+              <div
+                style={{
+                  display: "flex",
+                  columnGap: "5rem",
+                  rowGap: "2rem",
+                  flexWrap: "wrap",
+                  justifyContent: "flex-start",
+                  paddingTop: "0.5rem",
+                }}
+              >
+                {props.calendar.hours.map((branch, idx) => {
+                  return (
+                    <ul
+                      key={idx}
+                      className="unordered-list"
+                      style={{ fontSize: "1.5rem" }}
+                    >
+                      <strong>{branch.branch_name}</strong>
+                      {branch.times.map((time, idx) => {
+                        return (
+                          <li key={idx} style={{ fontSize: "1.5rem" }}>
+                            {time}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  );
+                })}
+              </div>
+
               {props.calendar.content.map((c, idx) => {
                 return (
-                  <div key={idx} style={{ padding: "0.5rem" }}>
-                    <div style={{ fontWeight: 700, fontSize: "1.5rem" }}>
+                  <>
+                    <div key={idx} className="subtitle">
                       {c.subtitle}
                     </div>
                     {c.bullet_points.map((point, idx) => {
@@ -70,9 +104,23 @@ export default function Calendar(props) {
                         </li>
                       );
                     })}
-                  </div>
+                  </>
                 );
               })}
+
+              <div className="subtitle">
+                Satellite Branch- Interactive Teller Machine At NYU Langone
+                Medical Center
+              </div>
+              <div className="paragraph" style={{ fontSize: "1.5rem" }}>
+                <div>
+                  ITM Machine is operating by appointment only. To request an
+                  appointment, please contact{" "}
+                  <a href="mailto: nyufcu.memberassist@nyu.edu">
+                    nyufcu.memberassist@nyu.edu
+                  </a>
+                </div>
+              </div>
             </Box>
           </Collapse>
         </TableCell>
