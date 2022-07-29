@@ -1,6 +1,6 @@
 import "../../../Pages/layout.css";
 import PageLayout from "../../../Components/PageLayout";
-
+import EmailSubmisson from "../../../Components/EmailSubmission";
 /**
  * @description Contact Us page, found in /contact-us
  * @returns the Contact Us page contents
@@ -95,6 +95,9 @@ export default function ContactUs() {
       </div>
       <div className="content-block">
         <div className="subtitle">Email Submission Form</div>
+        <div className="paragraph">
+          <EmailSubmisson />
+        </div>
       </div>
     </div>
   );

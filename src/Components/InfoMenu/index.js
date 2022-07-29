@@ -19,7 +19,6 @@ const classes = {
 
 export default function InfoMenu() {
   const { calendar, news, rates } = InfoMenuContent;
-  const navigate = useNavigate();
 
   return (
     <div className="info-container">
