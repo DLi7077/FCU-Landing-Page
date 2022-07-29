@@ -17,14 +17,13 @@ export default function Navbar() {
   const headerLinks = map(headers, (redirect, key) => {
     return (
       <Button
+        key={key}
         style={{ textTransform: "none" }}
         onClick={() => {
           navigate(redirect);
         }}
       >
-        <div key={key} className="text">
-          {key}
-        </div>
+        <div className="text">{key}</div>
       </Button>
     );
   });

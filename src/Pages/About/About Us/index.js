@@ -3,17 +3,18 @@ import ReactPlayer from "react-player/youtube";
 import { Tab, Tabs } from "@mui/material";
 import PageLayout from "../../../Components/PageLayout";
 import Slideshow from "../../../Components/Slideshow";
-import NYUButton from "../../../Components/Buttons";
+import NYUButton from "../../../Components/Buttons/NYUButton";
 import ceremony from "../../../Assets/about_us/august_1982_opening_ceremony.jpg";
 import annual2019PDF from "../../../Assets/about_us/files/2019_annual_report_spread.pdf";
 import "./styles.css";
+import "../../../Pages/layout.css";
 import Profile from "./Profile";
 import {
   BOARD_MEMBERS,
   FCU_TEAM,
   KitchenSlides,
   MeetingSlides,
-} from "../../../Constants/AboutUs";
+} from "../../../Constants/About/AboutUs";
 
 const videos = [
   {
@@ -53,12 +54,14 @@ const videos = [
     link: "https://youtu.be/8x-it1djM1U",
   },
 ];
+
 export default function AboutUs() {
   const [video, setVideo] = useState(0);
   const content = (
     <div className="content-container">
+      <div className="title">About Us</div>
       <div className="content-block">
-        <div className="title">ABOUT US</div>
+        <div className="subtitle">NYU Federal Credit Union</div>
         <div className="paragraph">
           <div>
             New York University Federal Credit Union was founded in August of
@@ -110,6 +113,8 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">MISSION STATEMENT</div>
         <div className="paragraph">
           Member owned and directed financial institution, dedicated to serving
@@ -117,6 +122,8 @@ export default function AboutUs() {
           services consistent with co-operative principles, applicable
           legislation, and sound management.
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">VISION STATEMENT</div>
         <div className="paragraph">
           <div>
@@ -133,6 +140,8 @@ export default function AboutUs() {
             daily.
           </div>
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">CORE VALUES</div>
         <div className="paragraph">
           <div>
@@ -181,6 +190,8 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">
           BOARD OF DIRECTORS & SUPERVISORY COMMITTEE
         </div>
@@ -189,21 +200,29 @@ export default function AboutUs() {
             return <Profile key={idx} member={member} />;
           })}
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">NYU Federal Credit Union Team</div>
         <div className="member-group">
           {FCU_TEAM.map((member, idx) => {
             return <Profile key={idx} member={member} />;
           })}
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">Annual Report</div>
         <div className="paragraph">
           <NYUButton redirect={annual2019PDF} label="read more" />
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">Pictures</div>
         <div style={{ display: "flex", gap: "5rem", flexDirection: "column" }}>
           <Slideshow slides={KitchenSlides} />
           <Slideshow slides={MeetingSlides} />
         </div>
+      </div>
+      <div className="content-block">
         <div className="subtitle">Videos</div>
         <div className="paragraph">
           <Tabs

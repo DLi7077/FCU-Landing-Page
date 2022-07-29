@@ -4,7 +4,7 @@ import "./styles.css";
 import Calendar from "./Calendar";
 import News from "./News";
 import Rates from "./Rates";
-import { Button, Table, TableBody } from "@mui/material";
+import { Table, TableBody } from "@mui/material";
 import { InfoMenuContent } from "../../Constants/InfoMenu";
 import JoinButton from "../Buttons/JoinButton";
 
@@ -23,8 +23,6 @@ export default function InfoMenu() {
 
   return (
     <div className="info-container">
-      {/* <a href="#calendar">Calendar</a>
-      <a href="#news">News</a> */}
       <Table>
         <TableBody sx={{ margin: 0 }}>
           <Calendar
@@ -49,6 +47,7 @@ export default function InfoMenu() {
           color: "#DD11DD",
           marginInline: "10%",
           marginTop: "2rem",
+          fontSize: "1.5rem",
           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",
         }}
       >

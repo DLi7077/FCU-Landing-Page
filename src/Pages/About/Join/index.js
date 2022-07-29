@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageLayout from "../../../Components/PageLayout";
 import JoinButton from "../../../Components/Buttons/JoinButton";
-import "./styles.css";
+import "../../../Pages/layout.css";
 
+/**
+ * @description Join page, found in /join
+ * @returns the join page contents
+ */
 export default function Join() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const content = (
     <div className="content-container">
+      <div className="title">Lifetime Membership: Who may join and how?</div>
       <div className="content-block">
-        <div className="title">LIFETIME MEMBERSHIP: WHO MAY JOIN AND HOW?</div>
         <div className="subtitle">Membership Requirements</div>
         <div className="paragraph">
           <div>
             Membership is open to all students, faculty, staff, NYU alumni,
             retiree and their immediate family members.
           </div>
-          <>
+          <div>
             <strong>If you are:</strong>
             <ul className="unordered-list">
               <li>An employee, faculty, staff or student at NYU</li>
@@ -44,11 +44,11 @@ export default function Join() {
               Please contact Member Services if you have any questions on
               qualifying for Membership.
             </div>
-          </>
+          </div>
         </div>
       </div>
       <div className="content-block">
-        <div className="title">APPLICATION PROCESS & REQUIRED DOCUMENTS</div>
+        <div className="title">Application Process and Required Documents</div>
         <div className="subtitle">How to Join</div>
         <div className="paragraph">
           <div>
@@ -70,38 +70,40 @@ export default function Join() {
           <div>
             <JoinButton />
           </div>
-          <div style={{ fontWeight: 700 }}>Contact Us:</div>
-          <ul className="unordered-list">
-            <li>
-              <div>
+          <div>
+            <div style={{ fontWeight: 700 }}>Contact Us:</div>
+            <ul className="unordered-list">
+              <li>
                 <div>
-                  <strong style={{ paddingRight: "5.5rem" }}>Call </strong>(212)
-                  995-3171
+                  <div>
+                    <strong style={{ paddingRight: "5.5rem" }}>Call </strong>
+                    (212) 995-3171
+                  </div>
+                  <div>
+                    <strong>Toll-free/USA </strong>(800) 997-0724
+                  </div>
                 </div>
+              </li>
+              <li>
                 <div>
-                  <strong>Toll-free/USA </strong>(800) 997-0724
+                  <strong>Email </strong>
+                  <a href="mailto: nyufcu.memberassist@nyu.edu">
+                    nyufcu.memberassist@nyu.edu
+                  </a>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Email </strong>
-                <a href="mailto: nyufcu.memberassist@nyu.edu">
-                  nyufcu.memberassist@nyu.edu
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Fax </strong>
-                (347) 602-4751
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <div>
+                  <strong>Fax </strong>
+                  (347) 602-4751
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="content-block">
-        <div className="title">DOCUMENTS NEEDED</div>
+        <div className="title">Documents Needed</div>
         <div className="subtitle">NEW MEMBER IDENTIFICATION</div>
         <div className="paragraph">
           <strong>
@@ -142,7 +144,7 @@ export default function Join() {
               will require additional documents.
             </li>
             <li>
-              Second form ID:  can be a second government issued, student ID or
+              Second form ID: can be a second government issued, student ID or
               work ID.
             </li>
             <li>
