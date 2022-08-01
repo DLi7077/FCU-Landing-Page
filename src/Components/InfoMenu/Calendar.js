@@ -17,7 +17,7 @@ export default function Calendar(props) {
       <TableRow id="calendar" sx={{ backgroundColor: "#d4d4d4" }}>
         <TableCell sx={{ width: "100px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={props.calendar.icon} className="cell-icon" />
+            <img src={props.calendar.icon} className="cell-icon" alt="icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>

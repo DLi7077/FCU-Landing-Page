@@ -1,5 +1,4 @@
 import React from "react";
-import Menu from "../../Components/CollapseMenu";
 import "./styles.css";
 
 export default function Layout(props) {
@@ -13,7 +12,6 @@ export default function Layout(props) {
       )}
       <div className="content" style={props.img ? { marginTop: "-100vh" } : {}}>
         <div className="content-body">
-          {/* <Menu /> */}
           {props.content}
         </div>
       </div>

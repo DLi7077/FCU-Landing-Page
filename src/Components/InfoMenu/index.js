@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import Calendar from "./Calendar";
 import News from "./News";

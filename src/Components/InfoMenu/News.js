@@ -30,7 +30,7 @@ export default function News(props) {
               justifyContent: "center",
             }}
           >
-            <img src={props.news.icon} className="cell-icon" />
+            <img src={props.news.icon} className="cell-icon" alt="icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>
