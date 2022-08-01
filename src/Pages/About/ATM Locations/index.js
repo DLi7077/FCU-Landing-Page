@@ -29,7 +29,7 @@ export default function ATMLocations() {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "#84008f",
+                  color: "#91009e",
                   fontWeight: 500,
                 }}
               >
@@ -53,7 +53,7 @@ export default function ATMLocations() {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "#84008f",
+                  color: "#91009e",
                   fontWeight: 500,
                 }}
               >
@@ -77,7 +77,7 @@ export default function ATMLocations() {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "#84008f",
+                  color: "#91009e",
                   fontWeight: 500,
                 }}
               >
@@ -101,7 +101,7 @@ export default function ATMLocations() {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "#84008f",
+                  color: "#91009e",
                   fontWeight: 500,
                 }}
               >

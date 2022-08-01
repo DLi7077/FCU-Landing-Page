@@ -110,7 +110,7 @@ export default function EmailSubmisson(props) {
                 display: "flex",
                 alignItems: "center",
                 fontSize: "1rem",
-                color: "#84008f",
+                color: "#91009e",
               }}
             >
               <Checkbox
@@ -146,7 +146,7 @@ export default function EmailSubmisson(props) {
               type="text"
               sx={{ backgroundColor: "#eee" }}
             />
-            <Button type="submit" sx={{ fontSize: "2rem", color: "#84008f" }}>
+            <Button type="submit" sx={{ fontSize: "2rem", color: "#91009e" }}>
               Submit
             </Button>
           </div>

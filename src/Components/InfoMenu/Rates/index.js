@@ -34,8 +34,7 @@ export default function Rates(props) {
 
   return (
     <>
-      <div id="news"></div>
-      <TableRow sx={{ backgroundColor: "#d4d4d4", width: "100%" }}>
+      <TableRow id="news" sx={{ backgroundColor: "#d4d4d4", width: "100%" }}>
         <TableCell sx={{ width: "100px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img src={props.news.icon} className="cell-icon" />
@@ -49,11 +48,11 @@ export default function Rates(props) {
           >
             {open ? (
               <KeyboardArrowDownIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             ) : (
               <KeyboardArrowRightIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             )}
           </IconButton>
@@ -118,7 +117,7 @@ export default function Rates(props) {
                 <Tab label="Savings" sx={{ color: "purple" }} />
                 <Tab label="Credit Card" sx={{ color: "purple" }} />
               </Tabs>
-              {tableMapping[idx]}
+              <div>{tableMapping[idx]}</div>
             </Box>
           </Collapse>
         </TableCell>

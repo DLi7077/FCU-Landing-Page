@@ -11,13 +11,13 @@ const TCell = styled(TableCell)({
   fontWeight: 400,
   fontSize: "1.5rem",
   width: "5rem",
-  borderBottom: "1px solid #84008f",
+  borderBottom: "1px solid #91009e",
 });
 const HCell = styled(TableCell)({
   fontWeight: 600,
   fontSize: "1.5rem",
   width: "5rem",
-  borderBottom: "1px solid #84008f",
+  borderBottom: "1px solid #91009e",
 });
 
 export default function LoansTable() {

@@ -237,7 +237,7 @@ export default function AboutUs() {
                 <Tab
                   key={idx}
                   label={video.label}
-                  style={{ color: "#84008f" }}
+                  style={{ color: "#91009e" }}
                 />
               );
             })}

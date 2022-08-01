@@ -36,8 +36,6 @@
   justify-content: center;
   text-align: center;
   padding-inline: min(5%, 5rem);
+  padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.redirect {
-  background-color: black;
 }

@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Router>
+        <div style={{ height: "60px" }} />
         <Navbar />
         <Routes>{routeLinks}</Routes>
         <Footer />

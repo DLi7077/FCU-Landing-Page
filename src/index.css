@@ -1,22 +1,36 @@
-
+html {
+  font-size: 12px;
+  offset-position: 0 60px;
+}
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #72007c;
+}
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: #9c27b0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-@media only screen and (max-width: 1200px) {
-  :root {
-    font-size: 12px;
-  }
 }
