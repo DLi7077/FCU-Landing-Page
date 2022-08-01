@@ -14,8 +14,17 @@ export default function Calendar(props) {
 
   return (
     <>
-      <TableRow id="calendar" sx={{ backgroundColor: "#d4d4d4" }}>
+      <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
         <TableCell sx={{ width: "100px" }}>
+          <div
+            id="calendar"
+            style={{
+              position: "relative",
+              backgroundColor: "red",
+              top: "-80px",
+              visibility: "hidden",
+            }}
+          />
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img src={props.calendar.icon} className="cell-icon" alt="icon" />
           </div>

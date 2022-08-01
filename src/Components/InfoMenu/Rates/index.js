@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import {
   Box,
   Button,
@@ -26,7 +25,6 @@ const tableMapping = [<LoansTable />, <SavingsTable />, <CreditCardTable />];
 export default function Rates(props) {
   const [open, setOpen] = useState(true);
   const [idx, setIdx] = useState(0);
-  const navigate = useNavigate();
 
   const handleIdxChange = (event, newValue) => {
     setIdx(newValue);
@@ -37,7 +35,7 @@ export default function Rates(props) {
       <TableRow id="news" sx={{ backgroundColor: "#d4d4d4", width: "100%" }}>
         <TableCell sx={{ width: "100px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={props.news.icon} className="cell-icon" />
+            <img src={props.news.icon} className="cell-icon" alt="menu icon" />
           </div>
         </TableCell>
         <TableCell sx={{ width: "60px", padding: 0 }}>
