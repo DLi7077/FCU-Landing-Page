@@ -24,8 +24,8 @@ const menuContent = [
     label: "Savings",
     icon: savings,
     redirects: [
-      { label: "Savings Accounts", link: "/" },
-      { label: "Checking", link: "/" },
+      { label: "Savings Accounts", link: "/savings-accounts" },
+      { label: "Checking", link: "/checking" },
       { label: "Traditional IRA", link: "/" },
       { label: "Lucky Savers Club", link: "/" },
       { label: "Dream & Holiday Club", link: "/" },

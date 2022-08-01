@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: flex-start;
   background-color: #91009e;
-  height: 4rem;
+  height: 60px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid white;
@@ -29,6 +29,13 @@
 .burger {
   position: absolute;
 }
+.menu-icon {
+  width: 40px;
+}
+.menu-title {
+  color: white;
+  font-size: 24px;
+}
 .drawer {
   display: flex;
   flex-direction: column;
@@ -47,7 +54,7 @@
   font-size: 1.5rem;
   padding-left: 2rem;
   padding-top: 3px;
-  padding-bottom:3px;
+  padding-bottom: 3px;
   color: #e5e5e5;
 }
 .redirect:hover {

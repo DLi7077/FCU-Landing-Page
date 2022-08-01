@@ -5,7 +5,7 @@ import PageLayout from "../../../Components/PageLayout";
 import Slideshow from "../../../Components/Slideshow";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import ceremony from "../../../Assets/about_us/august_1982_opening_ceremony.jpg";
-import annual2019PDF from "../../../Assets/about_us/files/2019_annual_report_spread.pdf";
+import annual2019PDF from "../../../Assets/pdfs/2019_annual_report_spread.pdf";
 import "./styles.css";
 import "../../../Pages/layout.css";
 import Profile from "./Profile";

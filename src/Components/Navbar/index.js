@@ -53,8 +53,12 @@ export default function Navbar() {
                           gap: "1rem",
                         }}
                       >
-                        <img src={content.icon} style={{ width: "2.5rem" }} />
-                        <div style={{ color: "white", fontSize: "1.75rem" }}>
+                        <img
+                          src={content.icon}
+                          className="menu-icon"
+                          alt="menu icon"
+                        />
+                        <div className="menu-title">
                           {get(content, "label")}
                         </div>
                       </div>
@@ -113,7 +117,11 @@ export default function Navbar() {
             }}
             className="home-icon"
           >
-            <img src={icon} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+            <img
+              src={icon}
+              style={{ maxWidth: "100%", maxHeight: "100%" }}
+              alt="nyu logo"
+            />
           </Button>
         </div>
       </div>

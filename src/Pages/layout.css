@@ -1,7 +1,7 @@
 .content-container {
   display: flex;
   flex-direction: column;
-  padding-inline: 5%;
+  padding-inline: 8%;
   gap: 2.5rem;
 }
 .content-block {
@@ -12,7 +12,7 @@
 }
 .title {
   width: 100%;
-  font-size: 3.25rem;
+  font-size: 5rem;
   text-align: center;
 }
 .subtitle {
@@ -20,11 +20,15 @@
   color: #91009e;
   border-bottom: 1px solid #91009e;
 }
+blockquote {
+  font-size: 1rem;
+  font-style: italic;
+}
 .paragraph {
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height: 1.8;
+  line-height: 1.5;
   gap: 1rem;
   font-size: 1.5rem;
   margin-inline: 2%;
