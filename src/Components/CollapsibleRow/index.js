@@ -8,50 +8,56 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function CollapsibleRow(props) {
   const [open, setOpen] = useState(props.open ?? false);
-  // const openedStyle = { backgroundColor: "rgba(131, 0, 143,0.5)" };
   const openedStyle = {};
+  const arrowPosition = props.arrow_position === "right" ? "right" : "left";
+
   const defaultStyle = {
     padding: 0,
-    borderBottom: "2px solid #84008f",
+    borderBottom: "2px solid #91009e",
     width: "100%",
+    backgroundColor: props.row_color?? "none",
   };
-  const arrowStyle = { color: "#84008f", fontSize: "4rem" };
+  const arrowStyle = {
+    color: props.arrow_color ?? "#91009e",
+    fontSize: `${props.arrow_rem ?? 4}rem`,
+  };
+
+  const arrowComponent = (
+    <TableCell style={{ width: "60px", padding: 0 }}>
+      <IconButton
+        aria-label="expand row"
+        size="large"
+        onClick={() => setOpen(!open)}
+      >
+        {open ? (
+          <ArrowDropDownIcon sx={arrowStyle} />
+        ) : (
+          <ArrowRightIcon sx={arrowStyle} />
+        )}
+      </IconButton>
+    </TableCell>
+  );
+
   return (
     <>
       <TableRow sx={open ? assign(defaultStyle, openedStyle) : defaultStyle}>
-        <TableCell sx={{ width: "60px", padding: 0 }}>
-          <IconButton
-            aria-label="expand row"
-            size="large"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? (
-              <ArrowDropDownIcon sx={arrowStyle} />
-            ) : (
-              <ArrowRightIcon sx={arrowStyle} />
-            )}
-          </IconButton>
-        </TableCell>
-        <TableCell colSpan={6} sx={{ fontSize: "1.5rem" }}>
+        {arrowPosition === "left" && arrowComponent}
+        <TableCell sx={{ fontSize: "2rem", paddingBottom: "0.5rem" }}>
           {props.title}
         </TableCell>
+        {arrowPosition === "right" && arrowComponent}
       </TableRow>
       <TableRow>
-        <TableCell
-          sx={{
-            paddingBottom: 0,
-            paddingTop: 0,
-          }}
-          colSpan={6}
-        >
+        <TableCell style={{ padding: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box
               sx={{
                 display: "flex",
-                flexDirection: "column",
-                marginLeft: "5rem",
-                paddingTop: "1rem",
+                marginLeft: props.margin_left ?? "5rem",
+                alignItems: 'center',
+                paddingTop: "0.25rem",
                 paddingBottom: "1rem",
+                backgroundColor: props.collapse_color ?? "none",
               }}
             >
               {props.content}

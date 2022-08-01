@@ -13,7 +13,7 @@ export default function Layout(props) {
       )}
       <div className="content" style={props.img ? { marginTop: "-100vh" } : {}}>
         <div className="content-body">
-          <Menu />
+          {/* <Menu /> */}
           {props.content}
         </div>
       </div>

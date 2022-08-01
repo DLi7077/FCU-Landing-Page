@@ -25,7 +25,6 @@ export default function JoinButton() {
             fontWeight: 300,
             textTransform: "capitalize",
           }}
-          to="https://www.mobicint.net/nyu/openAccount/start"
         >
           Become a Member &#8594;
         </Button>

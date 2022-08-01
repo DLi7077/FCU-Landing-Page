@@ -33,22 +33,26 @@ export default function Home(props) {
         Matter
       </div>
       <div className="button-area">
-        <a
-          href="https://www.mobicint.net/nyu/login/loanapp"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <Button sx={classes.button}>Apply for a Loan</Button>
-        </a>
-        <a
-          href="https://www.mobicint.net/nyu/openAccount/start"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <Button sx={classes.button}>Become a member</Button>
-        </a>
+        <div>
+          <a
+            href="https://www.mobicint.net/nyu/login/loanapp"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Button sx={classes.button}>Apply for a Loan</Button>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.mobicint.net/nyu/openAccount/start"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Button sx={classes.button}>Become a member</Button>
+          </a>
+        </div>
       </div>
     </div>
   );

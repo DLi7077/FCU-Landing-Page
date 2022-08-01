@@ -1,32 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { map } from "lodash";
+import { HashLink } from "react-router-hash-link";
+import { get } from "lodash";
 import "./styles.css";
+import menuContent from "../../Constants/CollapseMenu";
 import icon from "../../Assets/nyu_icon.svg";
-import { Button, IconButton } from "@mui/material";
+import { Button, Drawer, IconButton, Table, TableBody } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CollapsibleRow from "../CollapsibleRow";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const [dropDisplay, setDropDisplay] = useState(false);
-  const headers = {
-    Loans: "/loans",
-    Eligibility: "/eligibility",
-    Forms: "/forms",
-  };
-  const headerLinks = map(headers, (redirect, key) => {
-    return (
-      <Button
-        key={key}
-        style={{ textTransform: "none" }}
-        onClick={() => {
-          navigate(redirect);
-        }}
-      >
-        <div className="text">{key}</div>
-      </Button>
-    );
-  });
+  const [drawerOpen, setDrawer] = useState(false);
 
   return (
     <>
@@ -34,12 +19,93 @@ export default function Navbar() {
         <div className="burger">
           <IconButton
             onClick={() => {
-              setDropDisplay(!dropDisplay);
+              setDrawer(!drawerOpen);
             }}
           >
             <MenuIcon style={{ fontSize: "4rem", color: "white" }} />
           </IconButton>
+          <Drawer
+            anchor="left"
+            open={drawerOpen}
+            onClose={() => {
+              setDrawer(false);
+            }}
+            style={{ maxWidth: "70%" }}
+          >
+            <div className="drawer">
+              <Button
+                style={{ width: "100%" }}
+                onClick={() => {
+                  setDrawer(false);
+                }}
+              >
+                <MenuIcon style={{ fontSize: "4rem", color: "white" }} />
+              </Button>
+              <Table>
+                <TableBody>
+                  {menuContent.map((content, idx) => {
+                    const label = (
+                      <div
+                        key={idx}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "1rem",
+                        }}
+                      >
+                        <img src={content.icon} style={{ width: "2.5rem" }} />
+                        <div style={{ color: "white", fontSize: "1.75rem" }}>
+                          {get(content, "label")}
+                        </div>
+                      </div>
+                    );
+                    const { redirects } = content;
+                    const dropdownLinks = (
+                      <div className="linkGroup">
+                        {redirects.map((page, idx) => {
+                          return (
+                            <div key={idx} style={{ width: "100%" }}>
+                              <HashLink
+                                to={{
+                                  pathname: page.link,
+                                  hash: page.hash ?? null,
+                                }}
+                                style={{
+                                  textDecoration: "none",
+                                  color: "white",
+                                }}
+                                onClick={() => {
+                                  setDrawer(false);
+                                }}
+                              >
+                                <div className="redirect">{page.label}</div>
+                              </HashLink>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    );
+
+                    return (
+                      <CollapsibleRow
+                        key={idx}
+                        arrow_color="white"
+                        arrow_position="right"
+                        arrow_rem={3}
+                        margin_left="0rem"
+                        row_color="#91009e"
+                        collapse_color="#aa62b1"
+                        title={label}
+                        content={dropdownLinks}
+                      />
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            </div>
+          </Drawer>
         </div>
+
         <div className="wrapper">
           <Button
             onClick={() => {
@@ -49,29 +115,8 @@ export default function Navbar() {
           >
             <img src={icon} style={{ maxWidth: "100%", maxHeight: "100%" }} />
           </Button>
-          <div className="redirects">{headerLinks}</div>
-        </div>
-        <div className="sign-up">
-          <div className="text">Sign up</div>
         </div>
       </div>
-
-      {dropDisplay && (
-        <div className="drop-down">
-          {headerLinks}
-
-          <a
-            href="https://www.mobicint.net/nyu/login"
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: "none" }}
-          >
-            <Button style={{ textTransform: "none" }}>
-              <div className="text">Sign up</div>
-            </Button>
-          </a>
-        </div>
-      )}
     </>
   );
 }

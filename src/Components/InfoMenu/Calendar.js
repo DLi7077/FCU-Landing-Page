@@ -28,11 +28,11 @@ export default function Calendar(props) {
           >
             {open ? (
               <KeyboardArrowDownIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             ) : (
               <KeyboardArrowRightIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             )}
           </IconButton>
@@ -93,10 +93,8 @@ export default function Calendar(props) {
 
               {props.calendar.content.map((c, idx) => {
                 return (
-                  <>
-                    <div key={idx} className="subtitle">
-                      {c.subtitle}
-                    </div>
+                  <div key={idx}>
+                    <div className="subtitle">{c.subtitle}</div>
                     {c.bullet_points.map((point, idx) => {
                       return (
                         <li key={idx} style={props.text}>
@@ -104,7 +102,7 @@ export default function Calendar(props) {
                         </li>
                       );
                     })}
-                  </>
+                  </div>
                 );
               })}
 

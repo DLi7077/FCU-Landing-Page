@@ -41,11 +41,11 @@ export default function News(props) {
           >
             {open ? (
               <KeyboardArrowDownIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             ) : (
               <KeyboardArrowRightIcon
-                sx={{ color: "black", fontSize: "4rem" }}
+                sx={{ color: "#72007c", fontSize: "4rem" }}
               />
             )}
           </IconButton>

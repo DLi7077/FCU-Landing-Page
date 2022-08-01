@@ -7,7 +7,7 @@ export default function Profile(props) {
   return (
     <div
       style={{
-        borderBottom: "2px solid #84008f",
+        borderBottom: "2px solid #91009e",
         paddingBottom: "1rem",
         padding: "1rem",
         margin: 0,
@@ -25,7 +25,7 @@ export default function Profile(props) {
             width: "160px",
             maxWidth: "160px",
             height: "160px",
-            border: "4px solid #84008f",
+            border: "4px solid #91009e",
           }}
         />
       </div>

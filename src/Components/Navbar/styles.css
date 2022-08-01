@@ -1,19 +1,16 @@
 .navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
-  background-color: #84008f;
+  justify-content: flex-start;
+  background-color: #91009e;
   height: 4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid white;
-}
-.redirects {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  padding-left: 2rem;
+  z-index: 10;
 }
 .sign-up {
   margin-right: 2rem;
@@ -24,43 +21,42 @@
   text-align: center;
   padding-inline: 1rem;
 }
-.drop-down {
-  position: relative;
-  top: 0;
-  display: none;
-  background-color: #a100af;
-  z-index: 10;
-}
 .wrapper {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .burger {
-  display: none;
+  position: absolute;
+}
+.drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  width: 320px;
+  background-color: #91009e;
+}
+.linkGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #aa62b1;
+}
+.redirect {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 3px;
+  padding-bottom:3px;
+  color: #e5e5e5;
+}
+.redirect:hover {
+  background-color: #bd77c4;
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 650px) {
   .burger {
-    display: flex;
-  }
-  .redirects {
-    display: none;
-  }
-  .sign-up {
-    display: none;
-  }
-  .home-icon {
-    width: 100%;
-    justify-content: center;
-  }
-  .navbar {
-    justify-content: flex-start;
-  }
-  .drop-down {
-    display: flex;
-  }
-  .wrapper {
-    justify-content: center;
-    width: 100%;
+    position: relative;
   }
 }

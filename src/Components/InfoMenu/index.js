@@ -10,7 +10,7 @@ import JoinButton from "../Buttons/JoinButton";
 
 const classes = {
   bold: {
-    fontSize: "2.5rem",
+    fontSize: "3rem",
   },
   text: {
     fontSize: "1.5rem",
