@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import "./styles.css";
 
 /**
  * @description Collapsible row containing news details
@@ -22,33 +23,35 @@ export default function News(props) {
   const navigate = useNavigate();
   return (
     <>
-      <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
-        <TableCell sx={{ width: "100px" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+      <TableRow className="row">
+        <TableCell style={{ width: "10%" }}>
+          <div className="button-cell">
+            <div
+              id="news"
+              style={{
+                position: "relative",
+                top: "-80px",
+                width: 0,
+                height: 0,
+                padding: 0,
+                margin: 0,
+                visibility: "hidden",
+              }}
+            />
             <img src={props.news.icon} className="cell-icon" alt="icon" />
+            <IconButton
+              aria-label="expand row"
+              size="large"
+              style={{ padding: 0, width: "40px", height: "40px" }}
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <KeyboardArrowDownIcon sx={props.arrow} />
+              ) : (
+                <KeyboardArrowRightIcon sx={props.arrow} />
+              )}
+            </IconButton>
           </div>
-        </TableCell>
-        <TableCell sx={{ width: "60px", padding: 0 }}>
-          <IconButton
-            aria-label="expand row"
-            size="large"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? (
-              <KeyboardArrowDownIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            ) : (
-              <KeyboardArrowRightIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            )}
-          </IconButton>
         </TableCell>
         <TableCell colSpan={2} sx={props.bold}>
           {props.news.title}

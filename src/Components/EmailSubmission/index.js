@@ -146,7 +146,14 @@ export default function EmailSubmisson(props) {
               type="text"
               sx={{ backgroundColor: "#eee" }}
             />
-            <Button type="submit" sx={{ fontSize: "2rem", color: "#91009e" }}>
+            <Button
+              type="submit"
+              sx={{
+                fontSize: "2rem",
+                color: "#91009e",
+                border: "2px solid",
+              }}
+            >
               Submit
             </Button>
           </div>

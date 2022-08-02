@@ -4,11 +4,10 @@ import { Button } from "@mui/material";
 /**
  * Generates a styled button to an external link
  * @param {any} props contains:
- * {
- *  label: The button text
- *  redirect: The redirect link
+ * @param {string} label: The button text
+ * @param {string} redirect: The redirect link
  * }
- * @returns
+ * @returns a button
  */
 export default function NYUButton(props) {
   return (
@@ -23,6 +22,7 @@ export default function NYUButton(props) {
           style={{
             backgroundColor: props.backgroundColor ?? "#CC11DC",
             height: "auto",
+            width: props.width ?? "auto",
             border: 0,
             borderRadius: 0,
             color: props.color ?? "white",

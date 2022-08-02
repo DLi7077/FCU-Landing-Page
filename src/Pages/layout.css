@@ -3,6 +3,7 @@
   flex-direction: column;
   padding-inline: 8%;
   gap: 2.5rem;
+  padding-bottom: 4rem;
 }
 .content-block {
   display: flex;

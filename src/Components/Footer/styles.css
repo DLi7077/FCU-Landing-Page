@@ -1,6 +1,8 @@
 .footer {
+  margin-bottom: 0;
+}
+.footer-content {
   color: white;
-  position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #232629;
@@ -48,7 +50,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .footer {
+  .footer-content {
     display: flex;
     flex-direction: column;
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import "../../Pages/layout.css";
 import Calendar from "./Calendar";
 import News from "./News";
 import Rates from "./Rates";
@@ -8,28 +9,36 @@ import { InfoMenuContent } from "../../Constants/InfoMenu";
 import JoinButton from "../Buttons/JoinButton";
 
 const classes = {
-  bold: {
-    fontSize: "3rem",
-  },
-  text: {
-    fontSize: "1.5rem",
-  },
+  bold: { fontSize: "3rem" },
+  text: { fontSize: "1.5rem" },
+  arrow: { color: "#72007c", fontSize: "5rem" },
 };
 
 export default function InfoMenu() {
   const { calendar, news, rates } = InfoMenuContent;
 
   return (
-    <div className="info-container">
-      <Table>
+    <>
+      <Table className="table">
         <TableBody sx={{ margin: 0 }}>
           <Calendar
             calendar={calendar}
+            arrow={classes.arrow}
             bold={classes.bold}
             text={classes.text}
           />
-          <News news={news} bold={classes.bold} text={classes.text} />
-          <Rates news={rates} bold={classes.bold} text={classes.text} />
+          <News
+            news={news}
+            arrow={classes.arrow}
+            bold={classes.bold}
+            text={classes.text}
+          />
+          <Rates
+            news={rates}
+            arrow={classes.arrow}
+            bold={classes.bold}
+            text={classes.text}
+          />
         </TableBody>
       </Table>
       <div
@@ -46,7 +55,11 @@ export default function InfoMenu() {
           marginInline: "10%",
           marginTop: "2rem",
           fontSize: "1.5rem",
+          display: "flex",
+          flexDirection: "column",
           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",
+          gap: "2rem",
+          paddingBottom: "4rem",
         }}
       >
         <div>
@@ -59,6 +72,6 @@ export default function InfoMenu() {
         </div>
         <JoinButton />
       </div>
-    </div>
+    </>
   );
 }
