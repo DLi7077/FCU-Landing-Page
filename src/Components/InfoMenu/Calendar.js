@@ -3,6 +3,7 @@ import { Box, Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "../../Pages/layout.css";
+import "./styles.css";
 
 /**
  * @description Collapsible row containing calendar and event details
@@ -14,40 +15,38 @@ export default function Calendar(props) {
 
   return (
     <>
-      <TableRow sx={{ backgroundColor: "#d4d4d4" }}>
-        <TableCell sx={{ width: "100px" }}>
-          <div
-            id="calendar"
-            style={{
-              position: "relative",
-              backgroundColor: "red",
-              top: "-80px",
-              visibility: "hidden",
-            }}
-          />
-          <div style={{ display: "flex", justifyContent: "center" }}>
+      <TableRow className="row">
+        <TableCell style={{ width: "10%" }}>
+          <div className="button-cell">
+            <div
+              id="calendar"
+              style={{
+                position: "relative",
+                top: "-80px",
+                width: 0,
+                height: 0,
+                padding: 0,
+                margin: 0,
+                visibility: "hidden",
+              }}
+            />
             <img src={props.calendar.icon} className="cell-icon" alt="icon" />
+            <IconButton
+              aria-label="expand row"
+              size="large"
+              style={{ padding: 0, width: "40px", height: "40px" }}
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <KeyboardArrowDownIcon sx={props.arrow} />
+              ) : (
+                <KeyboardArrowRightIcon sx={props.arrow} />
+              )}
+            </IconButton>
           </div>
         </TableCell>
-        <TableCell sx={{ width: "60px", padding: 0 }}>
-          <IconButton
-            aria-label="expand row"
-            size="large"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? (
-              <KeyboardArrowDownIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            ) : (
-              <KeyboardArrowRightIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            )}
-          </IconButton>
-        </TableCell>
-        <TableCell colSpan={2} sx={props.bold}>
-          {props.calendar.title}
+        <TableCell colSpan={1}>
+          <div className="row-title">{props.calendar.title}</div>
         </TableCell>
       </TableRow>
       <TableRow>
@@ -56,7 +55,7 @@ export default function Calendar(props) {
             paddingBottom: 0,
             paddingTop: 0,
           }}
-          colSpan={6}
+          colSpan={7}
         >
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box

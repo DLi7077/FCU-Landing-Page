@@ -4,14 +4,25 @@
   width: 100%;
   padding: 0;
 }
-
-@media only screen and (max-width: 1200px) {
-  .cell-icon {
-    width: 80px;
-  }
+.row {
+  background-color: #d4d4d4;
+  padding: 0;
+  max-height: 90px;
 }
-@media only screen and (max-width: 800px) {
-  .cell-icon {
-    width: 75px;
-  }
+.button-cell {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.collapse-icon {
+  padding: 0;
+  background-color: blue;
+}
+.cell-icon {
+  width: 6rem;
+}
+.row-title {
+  font-size: 3rem;
 }

@@ -22,7 +22,7 @@ export default function Navbar() {
               setDrawer(!drawerOpen);
             }}
           >
-            <MenuIcon style={{ fontSize: "4rem", color: "white" }} />
+            <MenuIcon style={{ fontSize: "5rem", color: "white" }} />
           </IconButton>
           <Drawer
             anchor="left"
@@ -39,7 +39,7 @@ export default function Navbar() {
                   setDrawer(false);
                 }}
               >
-                <MenuIcon style={{ fontSize: "4rem", color: "white" }} />
+                <MenuIcon style={{ fontSize: "5rem", color: "white" }} />
               </Button>
               <Table>
                 <TableBody>

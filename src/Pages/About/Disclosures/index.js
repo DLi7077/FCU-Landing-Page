@@ -1,14 +1,21 @@
-import React from "react";
+import { useState } from "react";
 import PageLayout from "../../../Components/PageLayout";
+import PasswordPrompt from "./PasswordPrompt";
 import "../../../Pages/layout.css";
+import DisclosurePage from "./DisclosurePage";
 
 export default function Disclosures() {
-  const content = (
-    <div className="content-container">
-      <div className="content-block">
-        <div className="title">Disclosures</div>
-      </div>
-    </div>
+  const [showPage, setPage] = useState(false);
+
+  const handlePageChange = () => {
+    setPage(true);
+  };
+  const passwordPromptPage = (
+    <PasswordPrompt password="password" pass={handlePageChange} />
   );
-  return <PageLayout content={content} />;
+  const disclosurePage = <DisclosurePage />;
+
+  return (
+    <PageLayout content={showPage ? disclosurePage : passwordPromptPage} />
+  );
 }

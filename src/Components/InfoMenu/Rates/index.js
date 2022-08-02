@@ -14,6 +14,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import LoansTable from "./LoansTable";
 import SavingsTable from "./SavingsTable";
 import CreditCardTable from "./CreditCardTable";
+import "../styles.css";
 
 const tableMapping = [<LoansTable />, <SavingsTable />, <CreditCardTable />];
 
@@ -32,28 +33,35 @@ export default function Rates(props) {
 
   return (
     <>
-      <TableRow id="news" sx={{ backgroundColor: "#d4d4d4", width: "100%" }}>
-        <TableCell sx={{ width: "100px" }}>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={props.news.icon} className="cell-icon" alt="menu icon" />
+      <TableRow className="row">
+        <TableCell style={{ width: "10%" }}>
+          <div className="button-cell">
+            <div
+              id="rates"
+              style={{
+                position: "relative",
+                top: "-80px",
+                width: 0,
+                height: 0,
+                padding: 0,
+                margin: 0,
+                display: "none",
+              }}
+            />
+            <img src={props.news.icon} className="cell-icon" alt="icon" />
+            <IconButton
+              aria-label="expand row"
+              size="large"
+              style={{ padding: 0, width: "40px", height: "40px" }}
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <KeyboardArrowDownIcon sx={props.arrow} />
+              ) : (
+                <KeyboardArrowRightIcon sx={props.arrow} />
+              )}
+            </IconButton>
           </div>
-        </TableCell>
-        <TableCell sx={{ width: "60px", padding: 0 }}>
-          <IconButton
-            aria-label="expand row"
-            size="large"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? (
-              <KeyboardArrowDownIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            ) : (
-              <KeyboardArrowRightIcon
-                sx={{ color: "#72007c", fontSize: "4rem" }}
-              />
-            )}
-          </IconButton>
         </TableCell>
         <TableCell colSpan={2} sx={props.bold}>
           {props.news.title}
