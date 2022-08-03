@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-export default function Layout(props) {
+export default function PageLayout(props) {
   return (
     <>
       {props.img && (

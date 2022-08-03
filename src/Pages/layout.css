@@ -1,8 +1,10 @@
 .content-container {
   display: flex;
   flex-direction: column;
-  padding-inline: 8%;
-  gap: 2.5rem;
+  background-color: white;
+  padding-inline: 9vw;
+  gap: 2rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 .content-block {
@@ -17,13 +19,26 @@
   text-align: center;
 }
 .subtitle {
+  padding-top: 1rem;
   font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.1;
   color: #91009e;
   border-bottom: 1px solid #91009e;
+  text-transform: uppercase;
+}
+.part-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #65006e;
 }
 blockquote {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-style: italic;
+  margin-inline: 0;
+  padding-left: 1.75rem;
+  border-left: 2px solid #dddddd;
 }
 .paragraph {
   display: flex;
@@ -33,6 +48,7 @@ blockquote {
   gap: 1rem;
   font-size: 1.5rem;
   margin-inline: 2%;
+  padding-top: 1rem;
 }
 .list {
   display: flex;
@@ -48,4 +64,14 @@ blockquote {
   flex-direction: column;
   text-align: left;
   margin: 0;
+}
+.bold {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    padding-inline: 1rem;
+  }
 }

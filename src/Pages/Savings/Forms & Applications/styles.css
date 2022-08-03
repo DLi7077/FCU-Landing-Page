@@ -1,0 +1,19 @@
+.group {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: center;
+  gap: 4rem;
+}
+.listView {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  color: #cc11dd;
+}
+@media only screen and (max-width: 1000px) {
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+}

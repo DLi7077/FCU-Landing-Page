@@ -4,6 +4,9 @@
   width: 100%;
   padding: 0;
 }
+.table {
+  background-color: white;
+}
 .row {
   background-color: #d4d4d4;
   padding: 0;

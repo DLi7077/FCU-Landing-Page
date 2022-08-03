@@ -19,7 +19,7 @@ export default function InfoMenu() {
 
   return (
     <>
-      <Table className="table">
+      <Table sx={{ backgroundColor: "white" }}>
         <TableBody sx={{ margin: 0 }}>
           <Calendar
             calendar={calendar}
