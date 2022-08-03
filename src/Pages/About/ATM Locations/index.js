@@ -184,18 +184,22 @@ export default function ATMLocations() {
                 <CollapsibleRow
                   title="12 NYUFCU ATMs on Washington Square campus (using your NYUFCU Debit Card)"
                   content={washingtion_square_atm_list}
+                  collapse_color="#e4e4e4"
                 />
                 <CollapsibleRow
                   title="2 NYUFCU ATM on NYU Tandon Campus (using your NYUFCU Debit Card)"
                   content={tandon_campus_atm_list}
+                  collapse_color="#e4e4e4"
                 />
                 <CollapsibleRow
                   title="1 NYUFCU ATM at NYU College of Dentistry (using your NYUFCU Debit Card)"
                   content={dentistry_college_atm_list}
+                  collapse_color="#e4e4e4"
                 />
                 <CollapsibleRow
                   title="1 NYUFCU ATM at NYU Lutheran Medical Center (using your NYUFCU Debit Card)"
                   content={lutheran_medical_center_atms}
+                  collapse_color="#e4e4e4"
                 />
               </TableBody>
             </Table>

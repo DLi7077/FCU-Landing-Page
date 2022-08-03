@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import ScrollToTop from "./utils/ScrollToTop";
 import { createTheme, ThemeProvider } from "@mui/material";
+import "./Pages/layout.css";
 
 const theme = createTheme({
   status: {
@@ -14,6 +15,10 @@ const theme = createTheme({
       main: "#91009e",
       darker: "#053e85",
     },
+    secondary: {
+      main: "#aa62b1",
+      light: "#bd77c4",
+    },
     neutral: {
       main: "#64748B",
       contrastText: "#fff",
@@ -22,6 +27,7 @@ const theme = createTheme({
 });
 
 function App() {
+  const NAVBAR_HEIGHT = "5.5rem";
   const routeLinks = Pages.map((page, idx) => {
     return <Route key={idx} path={page.path} element={page.element} />;
   });
@@ -32,7 +38,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <div>
             <ScrollToTop />
-            <div style={{ height: "60px" }} />
+            <div style={{ height: NAVBAR_HEIGHT }} />
             <Navbar />
             <Routes>{routeLinks}</Routes>
           </div>
