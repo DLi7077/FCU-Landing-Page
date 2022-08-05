@@ -19,7 +19,6 @@ export default function NYUButton(props) {
         height: "auto",
         width: props.width ?? "auto",
         border: 0,
-        borderRadius: 0,
         color: props.color ?? "white",
         fontSize: "1.5rem",
         fontWeight: 300,
