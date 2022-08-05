@@ -19,7 +19,6 @@ export default function JoinButton() {
             backgroundColor: "#CC11DC",
             height: "3rem",
             border: 0,
-            borderRadius: 0,
             color: "white",
             fontSize: "1.5rem",
             fontWeight: 300,
