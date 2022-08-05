@@ -27,6 +27,7 @@ export default function Rates(props) {
   const [open, setOpen] = useState(true);
   const [idx, setIdx] = useState(0);
 
+  const tabStyle = { color: "purple", fontSize: "1.5rem" };
   const handleIdxChange = (event, newValue) => {
     setIdx(newValue);
   };
@@ -119,9 +120,9 @@ export default function Rates(props) {
                 );
               })}
               <Tabs value={idx} onChange={handleIdxChange}>
-                <Tab label="Loans" sx={{ color: "purple" }} />
-                <Tab label="Savings" sx={{ color: "purple" }} />
-                <Tab label="Credit Card" sx={{ color: "purple" }} />
+                <Tab label="Loans" sx={tabStyle} />
+                <Tab label="Savings" sx={tabStyle} />
+                <Tab label="Credit Card" sx={tabStyle} />
               </Tabs>
               <div>{tableMapping[idx]}</div>
             </Box>

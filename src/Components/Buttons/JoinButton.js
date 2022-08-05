@@ -15,7 +15,7 @@ export default function JoinButton() {
         }}
       >
         <Button
-          style={{
+          sx={{
             backgroundColor: "#CC11DC",
             height: "3rem",
             border: 0,
@@ -24,6 +24,10 @@ export default function JoinButton() {
             fontSize: "1.5rem",
             fontWeight: 300,
             textTransform: "capitalize",
+            borderRadius: "4px",
+            "&:hover": {
+              backgroundColor: "#91009e",
+            },
           }}
         >
           Become a Member &#8594;
