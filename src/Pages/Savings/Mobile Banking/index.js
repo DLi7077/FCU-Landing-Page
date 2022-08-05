@@ -17,16 +17,15 @@ export default function MobileBanking() {
   const content = (
     <div
       className="content-container"
-      style={{ paddingInline: "max(4rem,10vw)" }}
     >
       <div className="title">Mobile Banking</div>
       <div className="content-block">
         <div className="subtitle">Online Banking</div>
         <div className="paragraph">
-          <bold>
+          <div className="bold">
             Enjoy the convenience of 24-hour access to all of your accounts with
             our free Online Banking service.
-          </bold>
+          </div>
           <ul className="unordered-list">
             <li>View your account balance and history</li>
             <li>Transfer funds between accounts</li>

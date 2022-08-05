@@ -39,9 +39,7 @@ export default function OtherServices() {
         </div>
       </div>
       <div className="paragraph">
-        <div className="part-title">
-          NYU Washington Direct Deposit/ Payroll Deduction
-        </div>
+        <div className="part-title">NYU Medical Center Payroll Deduction</div>
         <ol className="list">
           <li>Please log in to your Inside Health Account.</li>
           <li>Click on the Menu tab</li>
@@ -218,7 +216,7 @@ export default function OtherServices() {
           a branch, or send a secure message through online banking with your
           request. If you wish to opt in/out of Overdraft Protection Transfers,
           please send a message through online banking.
-          <NYUButton label="Opt-Out Form" redirect="Courtesy_Opt_Form" />
+          <NYUButton label="Opt-Out Form" redirect={Courtesy_Opt_Form} />
         </div>
 
         <div className="part-title">
@@ -418,7 +416,7 @@ export default function OtherServices() {
   );
 
   const rowHeader = {
-    fontSize: "2.5rem",
+    fontSize: "2.25rem",
     fontWeight: 600,
     color: "#91009e",
     border: 0,

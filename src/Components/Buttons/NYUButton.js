@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 export default function NYUButton(props) {
   const button_info = (
     <Button
-      style={{
+      sx={{
         backgroundColor: props.backgroundColor ?? "#CC11DC",
         height: "auto",
         width: props.width ?? "auto",
@@ -25,6 +25,10 @@ export default function NYUButton(props) {
         fontWeight: 300,
         textTransform: "capitalize",
         marginTop: "0.5rem",
+        borderRadius: "4px",
+        "&:hover": {
+          backgroundColor: "#91009e",
+        },
       }}
     >
       {props.label} &#8594;

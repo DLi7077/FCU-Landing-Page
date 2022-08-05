@@ -31,6 +31,7 @@ const menuContent = [
       { label: "Mobile Banking", link: "/mobile-banking" },
       { label: "Other Services", link: "/other-services" },
       { label: "Savings Accounts", link: "/savings-accounts" },
+      { label: "Scholarships", link: "/scholarships" },
       { label: "Traditional IRA", link: "/traditional-ira" },
       { label: "Zelle®", link: "/zelle" },
     ],

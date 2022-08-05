@@ -18,7 +18,7 @@ export default function InfoMenu() {
   const { calendar, news, rates } = InfoMenuContent;
 
   return (
-    <>
+    <div className="content-container">
       <Table sx={{ backgroundColor: "white" }}>
         <TableBody sx={{ margin: 0 }}>
           <Calendar
@@ -72,6 +72,6 @@ export default function InfoMenu() {
         </div>
         <JoinButton />
       </div>
-    </>
+    </div>
   );
 }
