@@ -180,40 +180,72 @@ export default function TraditionalIRA() {
               }
             />
             <CollapsibleRow
-              title= {
-                <div className = 'part-title'>
-                  I make too much money to qualify for an IRA tax deduction. Can I contribute to my traditonal IRA?
+              title={
+                <div className="part-title">
+                  I make too much money to qualify for an IRA tax deduction. Can
+                  I contribute to my traditonal IRA?
                 </div>
               }
-              content= {
-                <div className= 'paragraph'>Yes. There are no income limits to make contributions to a traditional IRA. Your ability to make deductions may be affected by filing status and your participation in an employer retirement plan.</div>
+              content={
+                <div className="paragraph">
+                  Yes. There are no income limits to make contributions to a
+                  traditional IRA. Your ability to make deductions may be
+                  affected by filing status and your participation in an
+                  employer retirement plan.
+                </div>
               }
             />
             <CollapsibleRow
-              title= {
-                <div className = 'part-title'>When am I required to begin withdrawing money from my traditional IRA?
+              title={
+                <div className="part-title">
+                  When am I required to begin withdrawing money from my
+                  traditional IRA?
                 </div>
               }
-              content= {
-                <div className= 'paragraph'>You must begin to annually withdraw a required minimum distribution (RMD) from your IRA once you turn 70½ years of age. RMD guidelines, set by the IRS, ensure that investors don't use an IRA as a permanent shelter from income taxes.</div>
+              content={
+                <div className="paragraph">
+                  You must begin to annually withdraw a required minimum
+                  distribution (RMD) from your IRA once you turn 70½ years of
+                  age. RMD guidelines, set by the IRS, ensure that investors
+                  don't use an IRA as a permanent shelter from income taxes.
+                </div>
               }
             />
             <CollapsibleRow
-              title= {
-                <div className = 'part-title'>Can I name a beneficiary for my IRA?
+              title={
+                <div className="part-title">
+                  Can I name a beneficiary for my IRA?
                 </div>
               }
-              content= {
-                <div className= 'paragraph'>Yes. There are specific rules and forms to ensure that your IRA funds are dispersed to your intended beneficiary, in case of death. You can use the Individual Retirement Account Beneficiary Designation/Change form to select your beneficiary.</div>
+              content={
+                <div className="paragraph">
+                  Yes. There are specific rules and forms to ensure that your
+                  IRA funds are dispersed to your intended beneficiary, in case
+                  of death. You can use the Individual Retirement Account
+                  Beneficiary Designation/Change form to select your
+                  beneficiary.
+                </div>
               }
             />
             <CollapsibleRow
-              title= {
-                <div className = 'part-title'>Is there a limit on the number of IRA Rollovers that can be done?
+              title={
+                <div className="part-title">
+                  Is there a limit on the number of IRA Rollovers that can be
+                  done?
                 </div>
               }
-              content= {
-                <div className= 'paragraph'>Yes. Effective January 1, 2015, the IRS imposed the new IRA Rollover rule which stipulates that an IRA owner may complete only one IRA-to-IRA rollover per 365 days, regardless of how many IRAs you own, without differentiating between Traditional, Roth and SEP IRAs. This change of only one rollover per year will only affect rollovers, and will not have any impact on trustee-to-trustee transfers. The once-per-365-day rule does not apply to the direct rollover of 401(k) funds to a Traditional IRA.</div>
+              content={
+                <div className="paragraph">
+                  Yes. Effective January 1, 2015, the IRS imposed the new IRA
+                  Rollover rule which stipulates that an IRA owner may complete
+                  only one IRA-to-IRA rollover per 365 days, regardless of how
+                  many IRAs you own, without differentiating between
+                  Traditional, Roth and SEP IRAs. This change of only one
+                  rollover per year will only affect rollovers, and will not
+                  have any impact on trustee-to-trustee transfers. The
+                  once-per-365-day rule does not apply to the direct rollover of
+                  401(k) funds to a Traditional IRA.
+                </div>
               }
             />
           </TableBody>

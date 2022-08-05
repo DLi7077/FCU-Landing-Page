@@ -8,6 +8,7 @@ import icon from "../../Assets/nyu_icon.svg";
 import { Button, Drawer, IconButton, Table, TableBody } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CollapsibleRow from "../CollapsibleRow";
+import HashRedirect from "../HashRedirect";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -69,7 +70,7 @@ export default function Navbar() {
                         {redirects.map((page, idx) => {
                           return (
                             <div key={idx} style={{ width: "100%" }}>
-                              <HashLink
+                              <HashRedirect
                                 to={{
                                   pathname: page.link,
                                   hash: page.hash ?? null,
@@ -81,12 +82,22 @@ export default function Navbar() {
                                 onClick={() => {
                                   setDrawer(false);
                                 }}
-                              >
-                                <div className="redirect">{page.label}</div>
-                              </HashLink>
+                                content={
+                                  <div className="redirect">{page.label}</div>
+                                }
+                              />
                             </div>
                           );
                         })}
+                        <HashRedirect
+                          to={{
+                            pathname: "/",
+                            hash: "calendar",
+                          }}
+                          onClick={() => {
+                            setDrawer(false);
+                          }}
+                        />
                       </div>
                     );
 
@@ -97,8 +108,8 @@ export default function Navbar() {
                         arrow_position="right"
                         arrow_rem={3}
                         margin_left="0rem"
-                        row_color="#91009e"
-                        collapse_color="#aa62b1"
+                        row_color="#841ca1"
+                        collapse_color="#9730b4"
                         title={label}
                         content={dropdownLinks}
                       />

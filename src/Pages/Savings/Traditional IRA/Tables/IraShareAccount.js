@@ -1,4 +1,4 @@
-import TableBuilder from "./TableBuilder";
+import TableBuilder from "../../../../Components/TableBuilder";
 
 const tableheaders = ["Minimum balance to earn stated APY**", "Rate", "APY**"];
 

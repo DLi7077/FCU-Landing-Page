@@ -12,12 +12,12 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#91009e",
-      darker: "#053e85",
+      main: "#841ca1",
+      darker: "#5f0079",
     },
     secondary: {
-      main: "#aa62b1",
-      light: "#bd77c4",
+      main: "#a22dc2",
+      light: "#b345d1",
     },
     neutral: {
       main: "#64748B",
@@ -27,7 +27,7 @@ const theme = createTheme({
 });
 
 function App() {
-  const NAVBAR_HEIGHT = "5.5rem";
+  const NAVBAR_HEIGHT = "66px";
   const routeLinks = Pages.map((page, idx) => {
     return <Route key={idx} path={page.path} element={page.element} />;
   });

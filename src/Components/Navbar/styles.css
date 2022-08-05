@@ -5,7 +5,7 @@
   width: 100%;
   align-items: center;
   justify-content: flex-start;
-  background-color: #91009e;
+  background-color: #841ca1;
   height: 4.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -43,13 +43,13 @@
   align-items: flex-start;
   height: 100vh;
   width: 320px;
-  background-color: #91009e;
+  background-color: #841ca1;
 }
 .linkGroup {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #aa62b1;
+  background-color: #a22dc2;
 }
 .redirect {
   font-size: 1.5rem;
@@ -59,7 +59,7 @@
   color: #e5e5e5;
 }
 .redirect:hover {
-  background-color: #bd77c4;
+  background-color: #b345d1;
   color: #ffffff;
 }
 

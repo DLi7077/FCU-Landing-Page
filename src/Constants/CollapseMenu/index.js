@@ -11,13 +11,13 @@ const menuContent = [
     label: "About",
     icon: about,
     redirects: [
-      { label: "Join", link: "/join" },
       { label: "About us", link: "/about-us" },
-      { label: "Schedule", link: "/", hash: "calendar" },
       { label: "ATM Locations", link: "/atm-locations" },
-      { label: "FAQ", link: "/faq" },
-      { label: "Disclosures", link: "/disclosures" },
       { label: "Contact us", link: "/contact-us" },
+      { label: "Disclosures", link: "/disclosures" },
+      { label: "FAQ", link: "/faq" },
+      { label: "Join", link: "/join" },
+      { label: "Schedule", link: "/", hash: "calendar" },
     ],
   },
   {
@@ -40,12 +40,18 @@ const menuContent = [
     label: "Loans",
     icon: loans,
     redirects: [
-      { label: "Loans and Credit Requirements", link: "/" },
-      { label: "Student and Consolidation", link: "/" },
-      { label: "Vehicle Loans", link: "/" },
-      { label: "Home Loans", link: "/" },
-      { label: "Personal Loans", link: "/" },
-      { label: "Credit Cards", link: "/" },
+      { label: "Credit Cards", link: "/credit-cards" },
+      {
+        label: "Loans and Credit Requirements",
+        link: "/loans-credit-requirements",
+      },
+      { label: "Loan Submission", link: "/loan-submission" },
+      { label: "Personal Loans", link: "/personal-loans" },
+      {
+        label: "Student and Consolidation",
+        link: "/student-loan-consolidation",
+      },
+      { label: "Vehicle Loans", link: "/vehicle-loans" },
     ],
   },
   {

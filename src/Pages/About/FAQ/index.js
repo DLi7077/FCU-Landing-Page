@@ -4,6 +4,7 @@ import PageLayout from "../../../Components/PageLayout";
 import { Table, TableBody } from "@mui/material";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
 import "../../../Pages/layout.css";
+import NYUButton from "../../../Components/Buttons/NYUButton";
 
 /**
  * @description FAQ page, found in /faq
@@ -211,16 +212,16 @@ export default function FAQ() {
       }
     />
   );
-  // const Become_A_Member = (
-  //   <CollapsibleRow
-  //     title="Who can become a member of the NYU Federal Credit Union?"
-  //     content={
-  //       <div className="paragraph">
-  //         <Link to="/join">Read more here!</Link>
-  //       </div>
-  //     }
-  //   />
-  // );
+  const Become_A_Member = (
+    <CollapsibleRow
+      title="Who can become a member of the NYU Federal Credit Union?"
+      content={
+        <div className="paragraph">
+          <NYUButton label="Read more here" redirect="/join" local={true} />
+        </div>
+      }
+    />
+  );
   const sections = [
     Online_Banking,
     E_Statements,
@@ -234,6 +235,7 @@ export default function FAQ() {
     Deposits,
     Withdrawal,
     Location,
+    Become_A_Member,
   ];
 
   const content = (

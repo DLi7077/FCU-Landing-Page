@@ -21,6 +21,7 @@ const classes = {
     fontSize: "3rem",
   },
 };
+
 export default function Zelle() {
   const content = (
     <div className="content-container">
@@ -51,8 +52,10 @@ export default function Zelle() {
           </div>
         </div>
       </div>
-      <div className="video-container">
-        <ReactPlayer url={ZelleVideo} controls={true} playsinline={true} />
+      <div >
+        <div className="video-container">
+          <ReactPlayer url={ZelleVideo} controls={true} playsinline={true} />
+        </div>
       </div>
       <div className="content-block" style={classes.content}>
         <div className="subtitle" style={classes.subtitle}>

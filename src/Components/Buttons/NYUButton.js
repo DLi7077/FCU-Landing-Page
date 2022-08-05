@@ -15,7 +15,9 @@ export default function NYUButton(props) {
   const button_info = (
     <Button
       sx={{
-        backgroundColor: props.backgroundColor ?? "#CC11DC",
+        backgroundColor: props.backgroundColor ?? "primary.main",
+        padding: "0.2rem",
+        paddingInline: "0.5rem",
         height: "auto",
         width: props.width ?? "auto",
         border: 0,
@@ -23,10 +25,10 @@ export default function NYUButton(props) {
         fontSize: "1.5rem",
         fontWeight: 300,
         textTransform: "capitalize",
-        marginTop: "0.5rem",
+        margin:"0.25rem",
         borderRadius: "4px",
         "&:hover": {
-          backgroundColor: "#91009e",
+          backgroundColor: "primary.darker",
         },
       }}
     >
@@ -35,7 +37,7 @@ export default function NYUButton(props) {
   );
 
   return (
-    <div>
+    <div style={{ width: "fit-content" }}>
       {!!get(props, "local") ? (
         <Link
           to={props.redirect}

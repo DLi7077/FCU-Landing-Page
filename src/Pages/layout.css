@@ -15,14 +15,14 @@
   gap: 1rem;
 }
 .title {
-  width: 100%;
+  width: fit-content;
   font-size: 5rem;
-  text-align: center;
+  text-align: left;
 }
 .subtitle {
   padding-top: 1rem;
-  font-size: 2.25rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.1;
   color: #91009e;
   border-bottom: 1px solid #91009e;
@@ -33,6 +33,7 @@
   font-weight: 600;
   line-height: 1.2;
   color: #65006e;
+  text-transform: capitalize;
 }
 blockquote {
   font-size: 1.125rem;
@@ -70,7 +71,14 @@ ul {
   font-size: 1.75rem;
   font-weight: 600;
 }
-
+a {
+  /* text-decoration: none; */
+  font-weight: 500;
+  color: #91009e;
+}
+:target {
+  scroll-margin-top: 100px;
+}
 @media only screen and (max-width: 600px) {
   .content-container {
     padding-inline: 1rem;

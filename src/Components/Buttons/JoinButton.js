@@ -3,9 +3,7 @@ import { Button } from "@mui/material";
 
 export default function JoinButton() {
   return (
-    <div
-      style={{ display: "flex", justifyContent: "center", marginTop: "0.5rem" }}
-    >
+    <div style={{ width: "fit-content" }}>
       <a
         href="https://www.mobicint.net/nyu/openAccount/start"
         target="_blank"
@@ -16,16 +14,17 @@ export default function JoinButton() {
       >
         <Button
           sx={{
-            backgroundColor: "#CC11DC",
+            backgroundColor: "primary.main",
             height: "3rem",
             border: 0,
             color: "white",
+            margin: "0.25rem",
             fontSize: "1.5rem",
             fontWeight: 300,
             textTransform: "capitalize",
             borderRadius: "4px",
             "&:hover": {
-              backgroundColor: "#91009e",
+              backgroundColor: "primary.darker",
             },
           }}
         >

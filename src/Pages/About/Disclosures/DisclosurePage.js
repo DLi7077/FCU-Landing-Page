@@ -20,7 +20,9 @@ const classes = {
 export default function DisclosurePage() {
   const content = (
     <div className="content-container">
-      <div className="title">Disclosures</div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="title">Disclosures</div>
+      </div>
       <div className="content-block">
         <div style={classes.pdfGroup}>
           {pdfs.map((info, idx) => {

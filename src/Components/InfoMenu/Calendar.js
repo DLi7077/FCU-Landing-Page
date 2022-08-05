@@ -17,19 +17,7 @@ export default function Calendar(props) {
     <>
       <TableRow className="row">
         <TableCell style={{ width: "10%" }}>
-          <div className="button-cell">
-            <div
-              id="calendar"
-              style={{
-                position: "relative",
-                top: "-120px",
-                width: 0,
-                height: 0,
-                padding: 0,
-                margin: 0,
-                visibility: "hidden",
-              }}
-            />
+          <div className="button-cell" id="calendar">
             <img src={props.calendar.icon} className="cell-icon" alt="icon" />
             <IconButton
               aria-label="expand row"

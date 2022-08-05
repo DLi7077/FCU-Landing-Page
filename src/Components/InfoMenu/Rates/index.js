@@ -119,7 +119,7 @@ export default function Rates(props) {
                   </div>
                 );
               })}
-              <Tabs value={idx} onChange={handleIdxChange}>
+              <Tabs variant="scrollable" value={idx} onChange={handleIdxChange}>
                 <Tab label="Loans" sx={tabStyle} />
                 <Tab label="Savings" sx={tabStyle} />
                 <Tab label="Credit Card" sx={tabStyle} />
