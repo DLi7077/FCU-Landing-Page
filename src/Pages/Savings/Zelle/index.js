@@ -25,7 +25,9 @@ const classes = {
 export default function Zelle() {
   const content = (
     <div className="content-container">
-      <div className="title">Zelle®</div>
+      <div className="title" style={{ textAlign: "center" }}>
+        Zelle®
+      </div>
       <div className="content-block" style={classes.content}>
         <div className="paragraph" style={{ textAlign: "center" }}>
           <div>
@@ -52,7 +54,7 @@ export default function Zelle() {
           </div>
         </div>
       </div>
-      <div >
+      <div>
         <div className="video-container">
           <ReactPlayer url={ZelleVideo} controls={true} playsinline={true} />
         </div>

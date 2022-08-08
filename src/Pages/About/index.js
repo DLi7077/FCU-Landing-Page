@@ -6,12 +6,22 @@ import FAQ from "./FAQ";
 import Join from "./Join";
 
 const AboutPages = [
-  { path: "/about-us", element: <AboutUs /> },
-  { path: "/atm-locations", element: <ATMLocations /> },
-  { path: "/contact-us", element: <ContactUs /> },
-  { path: "/disclosures", element: <Disclosures /> },
-  { path: "/faq", element: <FAQ /> },
-  { path: "/join", element: <Join /> },
+  { path: "/about-us", label: "About Us", element: <AboutUs /> },
+  { path: "/atm-locations", label: "ATM Locations", element: <ATMLocations /> },
+  { path: "/contact-us", label: "Contact Us", element: <ContactUs /> },
+  { path: "/disclosures", label: "Disclosures", element: <Disclosures /> },
+  { path: "/faq", label: "FAQ", element: <FAQ /> },
+  { path: "/join", label: "Join", element: <Join /> },
+];
+
+export const AboutPageLinks = [
+  ...AboutPages.map((page) => {
+    return {
+      path: page.path,
+      label: page.label,
+    };
+  }),
+  { path: "/", hash: "calendar", label: "Calendar" },
 ];
 
 export default AboutPages;

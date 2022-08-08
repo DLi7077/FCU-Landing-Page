@@ -6,15 +6,39 @@ import StudentLoans from "./Student and Consolidation";
 import VehicleLoans from "./Vehicle Loans";
 
 const LoansPages = [
-  { path: "/credit-cards", element: <CreditCards /> },
+  { path: "/credit-cards", label: "Credit Cards", element: <CreditCards /> },
   {
     path: "/loans-credit-requirements",
+    label: "Loans and Credit Requirements",
     element: <LoansAndCreditRequirements />,
   },
-  { path: "/loan-submission", element: <LoanSubmission /> },
-  { path: "/personal-loans", element: <PersonalLoans /> },
-  { path: "/student-loan-consolidation", element: <StudentLoans /> },
-  { path: "/vehicle-loans", element: <VehicleLoans /> },
+  {
+    path: "/loan-submission",
+    label: "Loan Submissions",
+    element: <LoanSubmission />,
+  },
+  {
+    path: "/personal-loans",
+    label: "Personal Loans",
+    element: <PersonalLoans />,
+  },
+  {
+    path: "/student-loan-consolidation",
+    label: "Student Loan Consolidation",
+    element: <StudentLoans />,
+  },
+  {
+    path: "/vehicle-loans",
+    label: "Vehicle Loans",
+    element: <VehicleLoans />,
+  },
 ];
+
+export const LoansPageLinks = LoansPages.map((page) => {
+  return {
+    path: page.path,
+    label: page.label,
+  };
+});
 
 export default LoansPages;
