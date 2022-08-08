@@ -27,7 +27,7 @@ const theme = createTheme({
 });
 
 function App() {
-  const NAVBAR_HEIGHT = "66px";
+  const NAVBAR_HEIGHT = "64px";
   const routeLinks = Pages.map((page, idx) => {
     return <Route key={idx} path={page.path} element={page.element} />;
   });

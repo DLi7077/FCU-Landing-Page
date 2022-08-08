@@ -10,16 +10,59 @@ import TraditionalIRA from "./Traditional IRA";
 import Zelle from "./Zelle";
 
 const SavingsPages = [
-  { path: "/checking", element: <Checking /> },
-  { path: "/dream-&-holiday-club", element: <DreamHolidayClub /> },
-  { path: "/forms-&-applications", element: <FormsApplications /> },
-  { path: "/lucky-savers-club", element: <LuckySaversClub /> },
-  { path: "/mobile-banking", element: <MobileBanking /> },
-  { path: "/other-services", element: <OtherServices /> },
-  { path: "/savings-accounts", element: <SavingsAccounts /> },
-  { path: "/scholarships", element: <Scholarships /> },
-  { path: "/traditional-ira", element: <TraditionalIRA /> },
-  { path: "/zelle", element: <Zelle /> },
+  { path: "/checking", label: "Checking", element: <Checking /> },
+  {
+    path: "/dream-&-holiday-club",
+    label: "Dream and Holiday Club",
+    element: <DreamHolidayClub />,
+  },
+  {
+    path: "/forms-&-applications",
+    label: "Forms and Applications",
+    element: <FormsApplications />,
+  },
+  {
+    path: "/lucky-savers-club",
+    label: "Lucky Savers Club",
+    element: <LuckySaversClub />,
+  },
+  {
+    path: "/mobile-banking",
+    label: "Mobile Banking",
+    element: <MobileBanking />,
+  },
+  {
+    path: "/other-services",
+    label: "Other Services",
+    element: <OtherServices />,
+  },
+  {
+    path: "/savings-accounts",
+    label: "Savings Accounts",
+    element: <SavingsAccounts />,
+  },
+  {
+    path: "/scholarships",
+    label: "Scholarships",
+    element: <Scholarships />,
+  },
+  {
+    path: "/traditional-ira",
+    label: "Traditional IRA",
+    element: <TraditionalIRA />,
+  },
+  {
+    path: "/zelle",
+    label: "Zelle",
+    element: <Zelle />,
+  },
 ];
+
+export const SavingPagesLinks = SavingsPages.map((page) => {
+  return {
+    path: page.path,
+    label: page.label,
+  };
+});
 
 export default SavingsPages;

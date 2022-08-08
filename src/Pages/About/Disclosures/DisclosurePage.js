@@ -20,8 +20,8 @@ const classes = {
 export default function DisclosurePage() {
   const content = (
     <div className="content-container">
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="title">Disclosures</div>
+      <div className="title" style={{ textAlign: "center" }}>
+        Disclosures
       </div>
       <div className="content-block">
         <div style={classes.pdfGroup}>

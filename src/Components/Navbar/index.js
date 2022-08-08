@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { get } from "lodash";
 import "./styles.css";
 import menuContent from "../../Constants/CollapseMenu";
@@ -72,7 +71,7 @@ export default function Navbar() {
                             <div key={idx} style={{ width: "100%" }}>
                               <HashRedirect
                                 to={{
-                                  pathname: page.link,
+                                  pathname: page.path,
                                   hash: page.hash ?? null,
                                 }}
                                 style={{

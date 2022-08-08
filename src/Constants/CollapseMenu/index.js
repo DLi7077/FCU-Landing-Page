@@ -6,65 +6,31 @@ import rates from "../../Assets/menu_icons/rates.svg";
 import resources from "../../Assets/menu_icons/resources.svg";
 import savings from "../../Assets/menu_icons/savings.svg";
 
+import { AboutPageLinks } from "../../Pages/About";
+import { LoansPageLinks } from "../../Pages/Loans";
+import { MortagePageLinks } from "../../Pages/Mortgage";
+import { SavingPagesLinks } from "../../Pages/Savings";
+
 const menuContent = [
   {
     label: "About",
     icon: about,
-    redirects: [
-      { label: "About us", link: "/about-us" },
-      { label: "ATM Locations", link: "/atm-locations" },
-      { label: "Contact us", link: "/contact-us" },
-      { label: "Disclosures", link: "/disclosures" },
-      { label: "FAQ", link: "/faq" },
-      { label: "Join", link: "/join" },
-      { label: "Schedule", link: "/", hash: "calendar" },
-    ],
+    redirects: AboutPageLinks,
   },
   {
     label: "Savings",
     icon: savings,
-    redirects: [
-      { label: "Checking", link: "/checking" },
-      { label: "Dream & Holiday Club", link: "/dream-&-holiday-club" },
-      { label: "Forms & Applications", link: "/forms-&-applications" },
-      { label: "Lucky Savers Club", link: "/lucky-savers-club" },
-      { label: "Mobile Banking", link: "/mobile-banking" },
-      { label: "Other Services", link: "/other-services" },
-      { label: "Savings Accounts", link: "/savings-accounts" },
-      { label: "Scholarships", link: "/scholarships" },
-      { label: "Traditional IRA", link: "/traditional-ira" },
-      { label: "Zelle®", link: "/zelle" },
-    ],
+    redirects: SavingPagesLinks,
   },
   {
     label: "Loans",
     icon: loans,
-    redirects: [
-      { label: "Credit Cards", link: "/credit-cards" },
-      {
-        label: "Loans and Credit Requirements",
-        link: "/loans-credit-requirements",
-      },
-      { label: "Loan Submission", link: "/loan-submission" },
-      { label: "Personal Loans", link: "/personal-loans" },
-      {
-        label: "Student and Consolidation",
-        link: "/student-loan-consolidation",
-      },
-      { label: "Vehicle Loans", link: "/vehicle-loans" },
-    ],
+    redirects: LoansPageLinks,
   },
   {
     label: "Mortgage",
     icon: mortgage,
-    redirects: [
-      { label: "Mortgage Loans", link: "/" },
-      { label: "Home Equity", link: "/" },
-      { label: "Down Payment Assistance", link: "/" },
-      { label: "Realty Rewards", link: "/" },
-      { label: "Mortgage Prepardness Loan", link: "/" },
-      { label: "Homebuyer Dream Programs", link: "/" },
-    ],
+    redirects: MortagePageLinks,
   },
   {
     label: "Resources",
