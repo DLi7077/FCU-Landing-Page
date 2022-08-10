@@ -11,7 +11,7 @@ import JoinButton from "../Buttons/JoinButton";
 const classes = {
   bold: { fontSize: "3rem" },
   text: { fontSize: "1.5rem" },
-  arrow: { color: "#72007c", fontSize: "5rem" },
+  arrow: { color: "#72007c", fontSize: "4rem" },
 };
 
 export default function InfoMenu() {
@@ -34,7 +34,7 @@ export default function InfoMenu() {
             text={classes.text}
           />
           <Rates
-            news={rates}
+            rates={rates}
             arrow={classes.arrow}
             bold={classes.bold}
             text={classes.text}

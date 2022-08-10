@@ -416,7 +416,7 @@ export default function OtherServices() {
   );
 
   const rowHeader = {
-    fontSize: "2.25rem",
+    fontSize: "1.75rem",
     fontWeight: 600,
     color: "#91009e",
     border: 0,

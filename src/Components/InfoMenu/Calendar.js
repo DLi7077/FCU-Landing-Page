@@ -16,7 +16,7 @@ export default function Calendar(props) {
   return (
     <>
       <TableRow className="row">
-        <TableCell style={{ width: "10%" }}>
+        <TableCell style={{ width: "10%", padding: 0 }}>
           <div className="button-cell" id="calendar">
             <img src={props.calendar.icon} className="cell-icon" alt="icon" />
             <IconButton
@@ -33,7 +33,7 @@ export default function Calendar(props) {
             </IconButton>
           </div>
         </TableCell>
-        <TableCell colSpan={1}>
+        <TableCell>
           <div className="row-title">{props.calendar.title}</div>
         </TableCell>
       </TableRow>
@@ -43,7 +43,7 @@ export default function Calendar(props) {
             paddingBottom: 0,
             paddingTop: 0,
           }}
-          colSpan={7}
+          colSpan={2}
         >
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box

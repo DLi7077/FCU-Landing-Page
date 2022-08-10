@@ -35,7 +35,7 @@ export default function Rates(props) {
   return (
     <>
       <TableRow className="row">
-        <TableCell style={{ width: "10%" }}>
+        <TableCell style={{ width: "10%", padding: 0 }}>
           <div className="button-cell">
             <div
               id="rates"
@@ -49,7 +49,7 @@ export default function Rates(props) {
                 display: "none",
               }}
             />
-            <img src={props.news.icon} className="cell-icon" alt="icon" />
+            <img src={props.rates.icon} className="cell-icon" alt="icon" />
             <IconButton
               aria-label="expand row"
               size="large"
@@ -64,8 +64,8 @@ export default function Rates(props) {
             </IconButton>
           </div>
         </TableCell>
-        <TableCell colSpan={2} sx={props.bold}>
-          {props.news.title}
+        <TableCell>
+          <div className="row-title">{props.rates.title}</div>
         </TableCell>
       </TableRow>
       <TableRow>
@@ -85,7 +85,7 @@ export default function Rates(props) {
                 paddingBottom: "2rem",
               }}
             >
-              {props.news.content.map((c, idx) => {
+              {props.rates.content.map((c, idx) => {
                 return (
                   <div key={idx} style={{ padding: "1rem" }}>
                     <div style={{ fontWeight: 700, fontSize: "1.5rem" }}>

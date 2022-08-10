@@ -36,7 +36,7 @@ const menuContent = [
     label: "Resources",
     icon: resources,
     redirects: [
-      { label: "Articles", link: "/" },
+      { label: "Articles", path: "/articles" },
       { label: "Calculators", link: "/" },
       { label: "Personal Finance Tools", link: "/" },
       { label: "Trustage", link: "/" },
