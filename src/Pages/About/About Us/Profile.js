@@ -48,7 +48,7 @@ export default function Profile(props) {
       >
         {get(member, "roles").map((role, idx) => {
           return (
-            <div key={idx} style={{ fontSize: "1rem" }}>
+            <div key={idx} style={{ fontSize: "1.25rem" }}>
               {role}
             </div>
           );

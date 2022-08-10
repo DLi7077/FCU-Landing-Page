@@ -1,7 +1,6 @@
 import HomeEquity from "./Home Equity";
 import HomebuyerDreamPrograms from "./Homebuyer Dream Programs";
 import MortgageLoans from "./Mortgage Loans";
-import RealtyRewards from "./Realty Rewards";
 
 const MortgagePages = [
   {

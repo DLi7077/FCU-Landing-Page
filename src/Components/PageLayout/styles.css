@@ -27,7 +27,7 @@
 }
 .content {
   padding-top: 2rem;
-  background-color: #eeeeee;
+  background-color: black;
   width: 100%;
   text-align: center;
 }
@@ -36,6 +36,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-inline: min(2%, 5rem);
+  padding-inline: 6vw;
   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content-body {
+    padding-inline: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-body {
+    padding-inline: 2vw;
+  }
 }

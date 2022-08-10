@@ -24,7 +24,7 @@ export default function News(props) {
   return (
     <>
       <TableRow className="row">
-        <TableCell style={{ width: "10%" }}>
+        <TableCell style={{ width: "10%", padding: 0 }}>
           <div className="button-cell">
             <div
               id="news"
@@ -53,8 +53,8 @@ export default function News(props) {
             </IconButton>
           </div>
         </TableCell>
-        <TableCell colSpan={2} sx={props.bold}>
-          {props.news.title}
+        <TableCell>
+          <div className="row-title">{props.news.title}</div>
         </TableCell>
       </TableRow>
       <TableRow>

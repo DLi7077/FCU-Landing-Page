@@ -57,7 +57,9 @@ export default function HomeEquity() {
           </ul>
         </div>
         <div className="paragraph">
-          <FixedRateLoanTable />
+          <div style={{ maxWidth: "800px" }}>
+            <FixedRateLoanTable />
+          </div>
           <strong>This loan is the right choice if you...</strong>
           <ul>
             <li>Have a good amount of equity built up in your home</li>
@@ -112,7 +114,9 @@ export default function HomeEquity() {
               college tuition
             </li>
           </ul>
-          <HELOCTable />
+          <div style={{ maxWidth: "800px" }}>
+            <HELOCTable />
+          </div>
           <blockquote>
             Index Source - Wall Street Journal Prime rate
             <br />

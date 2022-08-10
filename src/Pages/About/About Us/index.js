@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import ReactPlayer from "react-player/youtube";
-import { Tab, Tabs } from "@mui/material";
 import PageLayout from "../../../Components/PageLayout";
 import Slideshow from "../../../Components/Slideshow";
 import NYUButton from "../../../Components/Buttons/NYUButton";
@@ -15,48 +13,48 @@ import {
   KitchenSlides,
   MeetingSlides,
 } from "../../../Constants/About/AboutUs";
+import TabGroup from "../../../Components/TabGroup";
 
 const videos = [
   {
     label: "NYU FCU Theme Song",
-    link: "https://youtu.be/K7g8xdoxBKc",
+    content: <ReactPlayer controls={true} url="https://youtu.be/K7g8xdoxBKc" />,
   },
   {
     label: "Our History",
-    link: "https://youtu.be/l43B6vIJ-Zw",
+    content: <ReactPlayer controls={true} url="https://youtu.be/l43B6vIJ-Zw" />,
   },
   {
     label: "Products & Services",
-    link: "https://youtu.be/fzlKDJDLPpc",
+    content: <ReactPlayer controls={true} url="https://youtu.be/fzlKDJDLPpc" />,
   },
   {
     label: "Meet Our Members: Edgar The Singer",
-    link: "https://youtu.be/XX_zYRVg88g",
+    content: <ReactPlayer controls={true} url="https://youtu.be/XX_zYRVg88g" />,
   },
   {
     label: "Meet Our Members: Robert's Life In Pictures",
-    link: "https://youtu.be/hxlrPtA2HMo",
+    content: <ReactPlayer controls={true} url="https://youtu.be/hxlrPtA2HMo" />,
   },
   {
     label: "NYU President Andy Hamilton's Speech",
-    link: "https://youtu.be/Y9WK5sQEnHM",
+    content: <ReactPlayer controls={true} url="https://youtu.be/Y9WK5sQEnHM" />,
   },
   {
     label: "NYU FCU Grand Opening",
-    link: "https://youtu.be/RxpT6_wNvho",
+    content: <ReactPlayer controls={true} url="https://youtu.be/RxpT6_wNvho" />,
   },
   {
     label: "NYU FCU ITM Instructions",
-    link: "https://youtu.be/Ckp0B-hYSck",
+    content: <ReactPlayer controls={true} url="https://youtu.be/Ckp0B-hYSck" />,
   },
   {
     label: "NYU FCU After Hours",
-    link: "https://youtu.be/8x-it1djM1U",
+    content: <ReactPlayer controls={true} url="https://youtu.be/8x-it1djM1U" />,
   },
 ];
 
 export default function AboutUs() {
-  const [video, setVideo] = useState(0);
   const content = (
     <div className="content-container">
       <div className="title">About Us</div>
@@ -225,31 +223,7 @@ export default function AboutUs() {
       <div className="content-block">
         <div className="subtitle">Videos</div>
         <div className="paragraph">
-          <Tabs
-            variant="scrollable"
-            value={video}
-            onChange={(event, newValue) => {
-              setVideo(newValue);
-            }}
-          >
-            {videos.map((video, idx) => {
-              return (
-                <Tab
-                  key={idx}
-                  label={video.label}
-                  style={{ color: "#91009e" }}
-                />
-              );
-            })}
-          </Tabs>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <ReactPlayer controls={true} url={videos[video].link} />
-          </div>
+          <TabGroup tabs={videos} />
         </div>
       </div>
     </div>

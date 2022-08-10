@@ -79,6 +79,7 @@ export default function Navbar() {
                                   color: "white",
                                 }}
                                 onClick={() => {
+                                  console.log(page.path);
                                   setDrawer(false);
                                 }}
                                 content={
@@ -88,15 +89,6 @@ export default function Navbar() {
                             </div>
                           );
                         })}
-                        <HashRedirect
-                          to={{
-                            pathname: "/",
-                            hash: "calendar",
-                          }}
-                          onClick={() => {
-                            setDrawer(false);
-                          }}
-                        />
                       </div>
                     );
 
