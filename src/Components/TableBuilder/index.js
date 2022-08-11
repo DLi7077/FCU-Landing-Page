@@ -30,7 +30,7 @@ export default function TableBuilder(props) {
   };
   return (
     <div style={{ overflow: "auto" }}>
-      <Table>
+      <Table style={{border:'1px solid black'}}>
         <TableHead>
           <TableRow>
             {props.tableHeaders.map((header, idx) => {

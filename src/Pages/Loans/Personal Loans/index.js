@@ -1,5 +1,6 @@
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import JoinButton from "../../../Components/Buttons/JoinButton";
 
 export default function PersonalLoans() {
   const content = (
@@ -9,19 +10,16 @@ export default function PersonalLoans() {
         <div className="paragraph">
           To apply for a NYU FCU loan, you must be a member and have a share
           account.
-          <NYUButton label="Check Eligibility" redirect="/join" />
           <div
             style={{
               display: "flex",
-              justifyContent: "flex-start",
-              gap: "4rem",
+              flexDirection: "column",
+              gap: "0.5rem",
             }}
           >
-            <NYUButton
-              label="Apply Now!"
-              redirect="https://www.mobicint.net/nyu/login/loanapp"
-            />
-            <NYUButton label="View Rates" redirect="loan-rates" />
+            <NYUButton label="Check Eligibility" redirect="/join" />
+            <JoinButton />
+            <NYUButton label="View Loan Rates" redirect="loan-rates" />
           </div>
         </div>
       </div>

@@ -54,9 +54,9 @@ export default function FormsApplications() {
           <div className="group">
             {FORMS.map((form, idx) => {
               return (
-                <div>
+                <div key={idx}>
                   <div className="subtitle">{form.title}</div>
-                  <ul key={idx} className="unordered-list">
+                  <ul className="unordered-list">
                     {ListGenerator(form.forms)}
                   </ul>
                 </div>

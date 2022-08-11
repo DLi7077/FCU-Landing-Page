@@ -58,7 +58,7 @@ const SavingsPages = [
   },
 ];
 
-export const SavingPagesLinks = SavingsPages.map((page) => {
+export const SavingPageLinks = SavingsPages.map((page) => {
   return {
     path: page.path,
     label: page.label,

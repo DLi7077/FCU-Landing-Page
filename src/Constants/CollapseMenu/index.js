@@ -9,7 +9,10 @@ import savings from "../../Assets/menu_icons/savings.svg";
 import { AboutPageLinks } from "../../Pages/About";
 import { LoansPageLinks } from "../../Pages/Loans";
 import { MortagePageLinks } from "../../Pages/Mortgage";
-import { SavingPagesLinks } from "../../Pages/Savings";
+import { SavingPageLinks } from "../../Pages/Savings";
+import { ResourcePageLinks } from "../../Pages/Resources";
+import { BusinessPageLinks } from "../../Pages/Business";
+import { RatesPageLinks } from "../../Pages/Rates";
 
 const menuContent = [
   {
@@ -20,7 +23,7 @@ const menuContent = [
   {
     label: "Savings",
     icon: savings,
-    redirects: SavingPagesLinks,
+    redirects: SavingPageLinks,
   },
   {
     label: "Loans",
@@ -35,32 +38,17 @@ const menuContent = [
   {
     label: "Resources",
     icon: resources,
-    redirects: [
-      { label: "Articles", path: "/articles" },
-      { label: "Calculators", link: "/" },
-      { label: "Personal Finance Tools", link: "/" },
-      { label: "Trustage", link: "/" },
-      { label: "Webinars and Seminars", link: "/" },
-      { label: "NYU FCU Events", link: "/" },
-      { label: "Resource Links", link: "/" },
-    ],
+    redirects: ResourcePageLinks,
   },
   {
     label: "Business",
     icon: business,
-    redirects: [
-      { label: "Accounts", link: "/" },
-      { label: "Loans", link: "/" },
-    ],
+    redirects: BusinessPageLinks,
   },
   {
     label: "Rates",
     icon: rates,
-    redirects: [
-      { label: "Share Rates", link: "/" },
-      { label: "Loan Rates", link: "/" },
-      { label: "Fee Schedule", link: "/" },
-    ],
+    redirects: RatesPageLinks,
   },
 ];
 

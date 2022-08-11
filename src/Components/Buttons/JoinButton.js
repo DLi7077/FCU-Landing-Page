@@ -15,13 +15,16 @@ export default function JoinButton() {
         <Button
           sx={{
             backgroundColor: "primary.main",
-            height: "3rem",
+            padding: "0.2rem",
+            paddingInline: "0.5rem",
+            height: "auto",
+            width: "auto",
             border: 0,
             color: "white",
-            margin: "0.25rem",
             fontSize: "1.5rem",
             fontWeight: 300,
             textTransform: "capitalize",
+            margin: "0.25rem",
             borderRadius: "4px",
             "&:hover": {
               backgroundColor: "primary.darker",
