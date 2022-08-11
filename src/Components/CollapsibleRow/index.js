@@ -75,7 +75,7 @@ export default function CollapsibleRow(props) {
             <Box
               sx={{
                 display: "flex",
-                marginLeft: props.margin_left ?? "5rem",
+                marginLeft: props.margin_left ?? "3rem",
                 alignItems: "center",
                 paddingTop: "0.5rem",
                 paddingBottom: "1rem",

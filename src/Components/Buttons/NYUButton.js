@@ -25,7 +25,7 @@ export default function NYUButton(props) {
         fontSize: "1.5rem",
         fontWeight: 300,
         textTransform: "capitalize",
-        margin:"0.25rem",
+        margin: "0.25rem",
         borderRadius: "4px",
         "&:hover": {
           backgroundColor: "primary.darker",

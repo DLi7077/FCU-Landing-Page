@@ -4,6 +4,8 @@ import SavingsPages from "./Savings";
 import LoansPages from "./Loans";
 import MortgagePages from "./Mortgage";
 import ResourcePages from "./Resources";
+import BusinessPages from "./Business";
+import RatesPages from "./Rates";
 
 const pages = [
   ...Homepage,
@@ -12,6 +14,8 @@ const pages = [
   ...LoansPages,
   ...MortgagePages,
   ...ResourcePages,
+  ...BusinessPages,
+  ...RatesPages,
 ];
 
 export default pages;

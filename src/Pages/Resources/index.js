@@ -1,4 +1,10 @@
 import Articles from "./Articles";
+import Calculators from "./Calculators";
+import Events from "./NYUFCU Events";
+import PersonalFinanceTools from "./Personal Finance Tools";
+import ResourceLinks from "./Resource Links";
+import Trustage from "./Trustage®";
+import WebinarsAndSeminars from "./Webinars & Seminars";
 
 const ResourcePages = [
   {
@@ -6,9 +12,40 @@ const ResourcePages = [
     label: "Articles",
     element: <Articles />,
   },
+  {
+    path: "/calculators",
+    label: "Calculators",
+    element: <Calculators />,
+  },
+  {
+    path: "/events",
+    label: "Events",
+    element: <Events />,
+  },
+  {
+    path: "/personal-finance-tools",
+    label: "Personal Finance Tools",
+    element: <PersonalFinanceTools />,
+  },
+  {
+    path: "/resource-links",
+    label: "Resource Links",
+    element: <ResourceLinks />,
+  },
+  {
+    path: "/trustage",
+    label: "Trustage",
+    element: <Trustage />,
+  },
+  {
+    path: "/webinars-and-seminars",
+    label: "Webinars and Seminars",
+    element: <WebinarsAndSeminars />,
+  },
+  
 ];
 
-export const ResourcePagesLinks = [
+export const ResourcePageLinks = [
   ...ResourcePages.map((page) => {
     return {
       path: page.path,

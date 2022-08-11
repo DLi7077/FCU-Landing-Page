@@ -79,7 +79,6 @@ export default function Navbar() {
                                   color: "white",
                                 }}
                                 onClick={() => {
-                                  console.log(page.path);
                                   setDrawer(false);
                                 }}
                                 content={

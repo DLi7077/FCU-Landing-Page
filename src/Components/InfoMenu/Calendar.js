@@ -15,9 +15,9 @@ export default function Calendar(props) {
 
   return (
     <>
-      <TableRow className="row">
+      <TableRow className="row" id="calendar">
         <TableCell style={{ width: "10%", padding: 0 }}>
-          <div className="button-cell" id="calendar">
+          <div className="button-cell" >
             <img src={props.calendar.icon} className="cell-icon" alt="icon" />
             <IconButton
               aria-label="expand row"
@@ -50,7 +50,7 @@ export default function Calendar(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "min(10%,12rem)",
+                marginLeft: "5vw",
                 paddingBottom: "2rem",
                 gap: "1rem",
                 fontSize: "1.5rem",

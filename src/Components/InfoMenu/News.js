@@ -70,7 +70,7 @@ export default function News(props) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "min(10%,12rem)",
+                marginLeft: "5vw",
                 paddingBottom: "2rem",
               }}
             >
