@@ -8,8 +8,8 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding-top:2rem;
-  padding-bottom: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
 }
 .logo {
   display: flex;
@@ -25,13 +25,15 @@
   flex-wrap: wrap;
   width: fit-content;
   gap: 1rem;
+  padding: 1rem;
 }
 .other-section {
-  margin-inline: 4rem;
+  padding-inline: 10vw;
 }
 .redirect-section {
   display: flex;
-  gap: 2rem;
+  column-gap: 1rem;
+  font-size: 1.25rem;
   flex-wrap: wrap;
   justify-content: center;
 }

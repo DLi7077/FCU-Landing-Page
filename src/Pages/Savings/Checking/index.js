@@ -2,11 +2,11 @@ import NYUButton from "../../../Components/Buttons/NYUButton";
 import PageLayout from "../../../Components/PageLayout";
 import Overdraft_Protection_Notice from "../../../Assets/pdfs/Overdraft_Protection.pdf";
 import "../../../Pages/layout.css";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function Checking() {
   const content = (
     <div className="content-container">
-      <div className="title">Checking</div>
       <div className="content-block">
         <div className="subtitle">Dividend Checking Account</div>
         <div className="paragraph">
@@ -90,5 +90,11 @@ export default function Checking() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Checking</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

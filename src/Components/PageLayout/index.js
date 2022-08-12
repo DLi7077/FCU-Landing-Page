@@ -10,7 +10,7 @@ export default function PageLayout(props) {
           {props.img_content}
         </div>
       )}
-      <div className="content" style={props.img ? { marginTop: "-100vh" } : {}}>
+      <div className="content" style={props.img ? { marginTop: "-80vh" } : {}}>
         <div className="content-body">
           {props.content}
         </div>

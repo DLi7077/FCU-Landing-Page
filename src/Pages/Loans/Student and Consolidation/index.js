@@ -1,11 +1,11 @@
 import PageLayout from "../../../Components/PageLayout";
 import FixedTable from "./FixedTable";
 import VariableTable from "./VariableTable";
+import brick from "../brick.jpg";
 
 export default function StudentLoans() {
   const content = (
     <div className="content-container">
-      <div className="title">Student Loan Consolidation</div>
       <div className="content-block">
         <div>
           <div className="part-title">Private Student Loan Consolidation</div>
@@ -89,5 +89,12 @@ export default function StudentLoans() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Student Loan Consolidation</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

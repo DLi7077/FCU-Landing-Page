@@ -8,6 +8,7 @@ import ClosingCosts from "../../../Assets/pdfs/Resources/Presentations/Closing C
 import FirstTimeHomeBuyer from "../../../Assets/pdfs/Resources/Presentations/First Time Home Buyer.pptx";
 import MoneyManagement from "../../../Assets/pdfs/Resources/Presentations/Money Management.ppt";
 import MortgageProcess from "../../../Assets/pdfs/Resources/Presentations/Mortgage Process.pptx";
+import nice from "../nice.jpg";
 
 const webinarVideos = [
   {
@@ -31,7 +32,6 @@ const webinarVideos = [
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Webinars and Seminars</div>
       <div className="content-block">
         <div className="subtitle">Videos</div>
         <TabGroup tabs={webinarVideos} />
@@ -146,5 +146,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Webinars and Seminars</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

@@ -1,6 +1,13 @@
 import PageLayout from "../../../Components/PageLayout";
+import bird_eye from "../bird_eye.png";
 
 export default function index() {
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Privacy Policy</div>
+    </div>
+  );
   const content = (
     <div className="content-container">
       <div className="title">Privacy Policy</div>
@@ -52,5 +59,5 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img_content={imgContent} img={img} />
 }

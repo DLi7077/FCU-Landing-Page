@@ -38,7 +38,7 @@ export default function NYUButton(props) {
   );
 
   return (
-    <div style={{ width: "fit-content" }}>
+    <div style={{ width: "auto" }}>
       {!!get(props, "local") ? (
         <HashRedirect
           to={{
@@ -46,7 +46,7 @@ export default function NYUButton(props) {
             hash: props.hash ?? "",
           }}
           target="_blank"
-          style={{ textDecoration: "none"}}
+          style={{ textDecoration: "none" }}
           content={button_info}
         />
       ) : (

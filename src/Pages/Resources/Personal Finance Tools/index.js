@@ -1,10 +1,10 @@
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import nice from "../nice.jpg";
 
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Investments, Retirement, and Insurance</div>
       <div className="content-block">
         <div className="paragraph">
           NYU FCU has partnered with the UNFCU Advisors™ to provide you with an
@@ -38,5 +38,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Personal Finance Tools</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

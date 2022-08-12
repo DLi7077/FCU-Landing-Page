@@ -3,11 +3,11 @@ import Credit_Card_Disclosure from "../../../Assets/pdfs/Credit Card Loans/Credi
 import Credit_Card_Classic from "../../../Assets/pdfs/Credit Card Loans/Credit_Card_Classic.pdf";
 import Credit_Card_Gold from "../../../Assets/pdfs/Credit Card Loans/Credit_Card_Gold.pdf";
 import Credit_Card_Platinum from "../../../Assets/pdfs/Credit Card Loans/Credit_Card_Platinum.pdf";
+import brick from "../brick.jpg";
 
 export default function CreditCards() {
   const content = (
     <div className="content-container">
-      <div className="title">Credit Cards</div>
       <div className="content-block">
         <div className="subtitle">MASTERCARD CLASSIC/ GOLD/ PLATINUM</div>
         <div className="paragraph">
@@ -242,5 +242,11 @@ export default function CreditCards() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Credit Cards</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

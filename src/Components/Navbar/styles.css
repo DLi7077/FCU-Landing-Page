@@ -27,7 +27,9 @@
 }
 .menu-icon {
   width: 40px;
+  filter: brightness(0) invert(1);
 }
+
 .menu-title {
   color: white;
   font-size: 1.75rem;

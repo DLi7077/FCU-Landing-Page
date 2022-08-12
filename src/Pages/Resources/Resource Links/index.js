@@ -2,6 +2,7 @@ import NYUButton from "../../../Components/Buttons/NYUButton";
 import PageLayout from "../../../Components/PageLayout";
 import ArmMortagesPDF from "../../../Assets/pdfs/Resources/Arm Mortgages.pdf";
 import "./styles.css";
+import nice from "../nice.jpg";
 
 const groupStyle = {
   minWidth: "48%",
@@ -12,7 +13,6 @@ const groupStyle = {
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Resource Links</div>
       <div className="link-group">
         <div style={groupStyle}>
           <div className="content-block">
@@ -159,6 +159,11 @@ export default function index() {
       </div>
     </div>
   );
-
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Resource Links</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

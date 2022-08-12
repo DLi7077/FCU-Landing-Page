@@ -14,6 +14,7 @@ import {
   MeetingSlides,
 } from "../../../Constants/About/AboutUs";
 import TabGroup from "../../../Components/TabGroup";
+import bird_eye from "../bird_eye.png";
 
 const videos = [
   {
@@ -55,9 +56,14 @@ const videos = [
 ];
 
 export default function AboutUs() {
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">About Us</div>
+    </div>
+  );
   const content = (
     <div className="content-container">
-      <div className="title">About Us</div>
       <div className="content-block">
         <div className="subtitle">NYU Federal Credit Union</div>
         <div className="paragraph">
@@ -228,5 +234,5 @@ export default function AboutUs() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

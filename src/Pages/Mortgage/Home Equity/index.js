@@ -2,6 +2,7 @@ import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import FixedRateLoanTable from "./FixedRateLoanTable";
 import HELOCTable from "./HELOCTable";
+import col from "../col.jpg";
 
 export default function HomeEquity() {
   const content = (
@@ -145,5 +146,11 @@ export default function HomeEquity() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={col} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Home Equity</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

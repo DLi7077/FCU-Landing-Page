@@ -4,6 +4,7 @@ import UsedCarRates from "./Tables/UsedCarRates";
 import RefianceNew from "./Tables/RefianceNew";
 import RefianceUsed from "./Tables/RefianceUsed";
 import MotorcycleLoan from "./Tables/MotorcycleLoan";
+import brick from "../brick.jpg";
 
 const headerStyle = {
   paddingTop: "0.75rem",
@@ -18,7 +19,6 @@ const cellStyle = {
 export default function VehicleLoans() {
   const content = (
     <div className="content-container">
-      <div className="title">Vehicle Loans</div>
       <div className="content-block">
         <div className="subtitle">VEHICLE LOANS</div>
         <div className="paragraph">
@@ -156,5 +156,11 @@ export default function VehicleLoans() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Vehicle Loans</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

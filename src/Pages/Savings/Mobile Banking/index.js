@@ -2,6 +2,7 @@ import React from "react";
 import PageLayout from "../../../Components/PageLayout";
 import google_play_store from "../../../Assets/logos/google-play-store.png";
 import apple_app_store from "../../../Assets/logos/apple-app-store.png";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function MobileBanking() {
   const GOOGLE_PLAY_APP =
@@ -15,10 +16,7 @@ export default function MobileBanking() {
     </a>
   );
   const content = (
-    <div
-      className="content-container"
-    >
-      <div className="title">Mobile Banking</div>
+    <div className="content-container">
       <div className="content-block">
         <div className="subtitle">Online Banking</div>
         <div className="paragraph">
@@ -143,5 +141,11 @@ export default function MobileBanking() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Mobile Banking</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }
