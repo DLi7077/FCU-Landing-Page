@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import NyuFcu from "../../Assets/nyu_fcu.svg";
 import Insurance from "../../Assets/insurance.svg";
+import AccessibilityPDF from "../../Assets/pdfs/accessibility.pdf";
+import HashRedirect from "../HashRedirect";
 
 export default function index(props) {
   const addressInfo = [
@@ -19,15 +21,34 @@ export default function index(props) {
     "We may provide links to third party partners, independent from NYU FCU. We do not manage the content of those sites. The privacy and security policies of external websites will differ from those of NYU Federal Credit Union.",
   ];
   const redirects = [
-    "DISCLOSURES",
-    "PRIVACY POLICY",
-    "CONTACT US",
-    "SERVICE CHARGE SCHEDULE",
-    "WEBSITE ACCESSIBILITY",
+    {
+      label: "DISCLOSURES",
+      redirect: "disclosures",
+    },
+    {
+      label: "PRIVACY POLICY",
+      redirect: "privacy-policy",
+    },
+    {
+      label: "CONTACT US",
+      redirect: "contact-us",
+    },
+    {
+      label: "SERVICE CHARGE SCHEDULE",
+      redirect: "fee-schedule",
+    },
+    {
+      label: "WEBSITE ACCESSIBILITY",
+      redirect: AccessibilityPDF,
+    },
   ];
 
   const addressText = addressInfo.map((address, idx) => {
-    return <div key={idx}>{address}</div>;
+    return (
+      <div key={idx} style={{ fontSize: "1.25rem" }}>
+        {address}
+      </div>
+    );
   });
   const otherText = otherInfo.map((other, idx) => {
     return (
@@ -39,7 +60,9 @@ export default function index(props) {
   const redirectSection = redirects.map((redirect, idx) => {
     return (
       <div key={idx} style={{ padding: "1rem" }}>
-        {redirect}
+        <a href={redirect.redirect} target="_blank" rel="noreferrer">
+          {redirect.label}
+        </a>
       </div>
     );
   });

@@ -31,7 +31,13 @@ export default function LoansAndCreditRequirements() {
       </div>
       <div className="content-block">
         <div className="subtitle"></div>
-        <div style={{ maxWidth: "1200px", borderBottom: "1px solid purple" }}>
+        <div
+          style={{
+            maxWidth: "1200px",
+            overflow: "auto",
+            borderBottom: "1px solid purple",
+          }}
+        >
           <LoanTable />
         </div>
         <div className="paragraph">

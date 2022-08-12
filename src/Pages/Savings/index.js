@@ -53,7 +53,7 @@ const SavingsPages = [
   },
   {
     path: "/zelle",
-    label: "Zelle",
+    label: "Zelle®",
     element: <Zelle />,
   },
 ];

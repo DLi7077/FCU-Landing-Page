@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -70;
+  const yOffset = -90;
   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
 };
 

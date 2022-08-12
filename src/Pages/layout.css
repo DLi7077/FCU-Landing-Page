@@ -24,7 +24,7 @@
 }
 .subtitle {
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.1;
   color: #91009e;
@@ -39,7 +39,7 @@
   text-transform: capitalize;
 }
 blockquote {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   margin-inline: 0;
   padding-left: 1.75rem;
@@ -51,7 +51,7 @@ blockquote {
   text-align: left;
   line-height: 1.7;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-inline: 2%;
 }
 ol {

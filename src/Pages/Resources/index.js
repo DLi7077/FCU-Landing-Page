@@ -34,7 +34,7 @@ const ResourcePages = [
   },
   {
     path: "/trustage",
-    label: "Trustage",
+    label: "TruStage®",
     element: <Trustage />,
   },
   {
