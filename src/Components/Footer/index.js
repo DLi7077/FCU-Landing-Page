@@ -70,17 +70,17 @@ export default function index(props) {
   return (
     <div className="footer">
       <div className="footer-content">
-        <div className="fcu-logo">
-          <img src={NyuFcu} alt="NYU logo" />
-        </div>
-        <div className="address-info">
-          <div>{addressText}</div>
-        </div>
-        <div className="insurance-logo">
-          <img
-            src={Insurance}
-            alt="Federally Insured by NCUA Equal Housing Lender"
-          />
+        <div className="bars">
+          <div className="address-info">
+            <div>{addressText}</div>
+          </div>
+          <div className="logo">
+            <img src={NyuFcu} alt="NYU logo" />
+            <img
+              src={Insurance}
+              alt="Federally Insured by NCUA Equal Housing Lender"
+            />
+          </div>
         </div>
         <div className="other-section">{otherText}</div>
         <div className="redirect-section">{redirectSection}</div>

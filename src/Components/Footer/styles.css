@@ -3,56 +3,35 @@
 }
 .footer-content {
   color: white;
-  padding-bottom: 8rem;
   background-color: #232629;
-
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 2rem;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top:2rem;
+  padding-bottom: 8rem;
 }
-.fcu-logo {
-  grid-column: 2/4;
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: fit-content;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.address-info {
-  grid-column: 4/6;
+.bars {
   display: flex;
-  align-items: center;
-  text-align: center;
-}
-.insurance-logo {
-  grid-column: 6/8;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-inline: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 1rem;
 }
 .other-section {
-  grid-column: 2/8;
-  display: flex;
-  flex-direction: column;
-  padding-inline: 2rem;
-  align-items: left;
-  text-align: left;
-  margin-inline: auto;
+  margin-inline: 4rem;
 }
 .redirect-section {
-  grid-column: 1/9;
   display: flex;
-  justify-content: space-around;
-  margin-inline: auto;
-}
-
-@media only screen and (max-width: 1200px) {
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .redirect-section {
-    flex-wrap: wrap;
-  }
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -8,7 +8,7 @@ const FREQUENCY = 365;
  * @param {number} years - the number of years to consider
  * @returns {number} the resulting amount after X years
  */
-function MultipleDeposit(values) {
+export function MultipleDepositCalc(values) {
   const { intial_deposit, annual_interest_rate, years } = values;
   const monthly_deposit = values.monthly_deposit ?? 0;
 
@@ -37,8 +37,8 @@ function MultipleDeposit(values) {
   return result;
 }
 
-function SingleDeposit(values) {
-  return MultipleDeposit(values);
+export function SingleDepositCalc(values) {
+  return MultipleDepositCalc(values);
 }
 
 /**
@@ -48,17 +48,24 @@ function SingleDeposit(values) {
  * @param {number} annual_rate
  * @param {number} loan_duration_in_months
  */
-function LoanPayment(values) {
+export function LoanPaymentCalc(values) {
   const { loan_amount, annual_rate, loan_duration_in_months } = values;
   const RATE_DIV_DURATION = annual_rate / 12;
   return (
-    (loan_amount * RATE_DIV_DURATION) /
-    (1 - (1 + RATE_DIV_DURATION) ** (-12 * loan_duration_in_months/12))
+    (loan_amount * RATE_DIV_DURATION ?? 1) /
+    (1 - (1 + RATE_DIV_DURATION) ** ((-12 * loan_duration_in_months) / 12))
   );
 }
 
-console.log(LoanPayment({
-  loan_amount:10000,
-  annual_rate:0.01,
-  loan_duration_in_months:36
-}));
+/**
+ * @description Calculates Loan Affordability
+ * @param {*} values - object that contains:
+ * @param {number} desired_payment
+ * @param {number} annual_rate - annual interest rate
+ * @param {number} months
+ * @returns Loan amount
+ */
+export function LoanAffordabilityCalc(values) {
+  const { desired_payment, annual_rate, months } = values;
+  return desired_payment * months * (1 - annual_rate / 12) ** months;
+}
