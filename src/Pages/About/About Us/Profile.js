@@ -31,7 +31,7 @@ export default function Profile(props) {
       </div>
       <div
         style={{
-          fontSize: "2rem",
+          fontSize: "1.75rem",
           textAlign: "center",
           lineHeight: 1,
           paddingBottom: "0.5rem",

@@ -17,7 +17,7 @@ export default function index() {
           style={{
             width: "fit-content",
             paddingRight: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.75rem",
           }}
         >
           6 Pre-Holidays Tips
@@ -111,7 +111,7 @@ export default function index() {
             width: "fit-content",
             paddingRight: "1rem",
             marginTop: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.75rem",
           }}
         >
           2 Post-Holiday Tips

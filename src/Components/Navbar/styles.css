@@ -15,12 +15,6 @@
 .sign-up {
   margin-right: 2rem;
 }
-.text {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  padding-inline: 1rem;
-}
 .wrapper {
   width: 100%;
   display: flex;
@@ -29,13 +23,14 @@
 .burger {
   position: absolute;
   left: 1rem;
+  padding: 0;
 }
 .menu-icon {
   width: 40px;
 }
 .menu-title {
   color: white;
-  font-size: 24px;
+  font-size: 1.75rem;
 }
 .drawer {
   display: flex;
@@ -67,5 +62,12 @@
   .burger {
     position: relative;
     left: 0;
+    font-size: 2rem;
+  }
+  .burger-icon {
+    font-size: 4rem;
+  }
+  .wrapper {
+    justify-content: flex-start;
   }
 }

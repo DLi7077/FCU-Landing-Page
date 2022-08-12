@@ -2,6 +2,7 @@ import React from "react";
 import { get } from "lodash";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import HashRedirect from "../HashRedirect";
 
 /**
  * Generates a styled button to an external link
@@ -22,7 +23,7 @@ export default function NYUButton(props) {
         width: props.width ?? "auto",
         border: 0,
         color: props.color ?? "white",
-        fontSize: "1.5rem",
+        fontSize: "1.25rem",
         fontWeight: 300,
         textTransform: "capitalize",
         margin: "0.25rem",
@@ -39,13 +40,15 @@ export default function NYUButton(props) {
   return (
     <div style={{ width: "fit-content" }}>
       {!!get(props, "local") ? (
-        <Link
-          to={props.redirect}
+        <HashRedirect
+          to={{
+            pathname: props.redirect,
+            hash: props.hash ?? "",
+          }}
           target="_blank"
-          style={{ textDecoration: "none" }}
-        >
-          {button_info}
-        </Link>
+          style={{ textDecoration: "none"}}
+          content={button_info}
+        />
       ) : (
         <a
           href={props.redirect}

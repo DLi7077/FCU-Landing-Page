@@ -18,7 +18,7 @@ import coopCreditUnionLogo from "../../../Assets/about_us/co-op_credit_union.png
  */
 export default function ATMLocations() {
   const washingtion_square_atm_list = (
-    <div style={{ fontSize: "1.5rem" }}>
+    <div style={{ fontSize: "1.25rem" }}>
       <ul className="unordered-list">
         {WASHINGTON_SQUARE_CAMPUS_ATMS.map((location, idx) => {
           return (
@@ -42,7 +42,7 @@ export default function ATMLocations() {
     </div>
   );
   const tandon_campus_atm_list = (
-    <div style={{ fontSize: "1.5rem" }}>
+    <div style={{ fontSize: "1.25rem" }}>
       <ul className="unordered-list">
         {TANDON_CAMPUS_ATMS.map((location, idx) => {
           return (
@@ -66,7 +66,7 @@ export default function ATMLocations() {
     </div>
   );
   const dentistry_college_atm_list = (
-    <div style={{ fontSize: "1.5rem" }}>
+    <div style={{ fontSize: "1.25rem" }}>
       <ul className="unordered-list">
         {COLLEGE_OF_DENTISTRY_ATMS.map((location, idx) => {
           return (
@@ -90,7 +90,7 @@ export default function ATMLocations() {
     </div>
   );
   const lutheran_medical_center_atms = (
-    <div style={{ fontSize: "1.5rem" }}>
+    <div style={{ fontSize: "1.25rem" }}>
       <ul className="unordered-list">
         {LUTHERAN_MEDICAL_CENTER_ATMS.map((location, idx) => {
           return (
@@ -123,7 +123,7 @@ export default function ATMLocations() {
           flexDirection: "column",
           justifyContent: "center",
           width: "100%",
-          fontSize: "1.5rem",
+          fontSize: "1.25rem",
         }}
       >
         Search for a ATM near you with Co-op Credit Unions

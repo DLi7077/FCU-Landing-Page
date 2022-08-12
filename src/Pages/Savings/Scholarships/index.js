@@ -14,7 +14,7 @@ export default function Scholarships() {
             been established to recognize, reward and help make possible the
             pursuit of higher education by NYU FCU members.
           </div>
-          <div className="bold" style={{ fontSize: "1.5rem" }}>
+          <div className="bold" style={{ fontSize: "1.25rem" }}>
             Two $1,000 scholarships will be awarded to incoming freshmen of Fall
             2022, and two $1,000 scholarships for returning students.
           </div>

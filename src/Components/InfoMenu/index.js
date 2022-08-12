@@ -10,7 +10,7 @@ import JoinButton from "../Buttons/JoinButton";
 
 const classes = {
   bold: { fontSize: "3rem" },
-  text: { fontSize: "1.5rem" },
+  text: { fontSize: "1.25rem" },
   arrow: { color: "#72007c", fontSize: "4rem" },
 };
 
@@ -18,47 +18,41 @@ export default function InfoMenu() {
   const { calendar, news, rates } = InfoMenuContent;
 
   return (
-    <div className="content-container">
-      <Table sx={{ backgroundColor: "white" }}>
-        <TableBody sx={{ margin: 0 }}>
-          <Calendar
-            calendar={calendar}
-            arrow={classes.arrow}
-            bold={classes.bold}
-            text={classes.text}
-          />
-          <News
-            news={news}
-            arrow={classes.arrow}
-            bold={classes.bold}
-            text={classes.text}
-          />
-          <Rates
-            rates={rates}
-            arrow={classes.arrow}
-            bold={classes.bold}
-            text={classes.text}
-          />
-        </TableBody>
-      </Table>
-      <div
-        style={{
-          marginTop: "5rem",
-          width: "100%",
-          height: "2px",
-          backgroundColor: "black",
-        }}
-      />
+    <div className="content-container" style={{ padding: "1rem" }}>
+      <div style={{ width: "100%" }}>
+        <Table sx={{ backgroundColor: "white", width: "100%" }}>
+          <TableBody sx={{ margin: 0 }}>
+            <Calendar
+              calendar={calendar}
+              arrow={classes.arrow}
+              bold={classes.bold}
+              text={classes.text}
+            />
+            <News
+              news={news}
+              arrow={classes.arrow}
+              bold={classes.bold}
+              text={classes.text}
+            />
+            <Rates
+              rates={rates}
+              arrow={classes.arrow}
+              bold={classes.bold}
+              text={classes.text}
+            />
+          </TableBody>
+        </Table>
+      </div>
       <div
         style={{
           color: "#DD11DD",
-          marginInline: "10%",
-          marginTop: "2rem",
-          fontSize: "1.5rem",
+          marginInline: "3vw",
+          fontSize: "1.25rem",
           display: "flex",
           flexDirection: "column",
+          alignItems: "center",
           textShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)",
-          gap: "2rem",
+          gap: "1rem",
           paddingBottom: "4rem",
         }}
       >

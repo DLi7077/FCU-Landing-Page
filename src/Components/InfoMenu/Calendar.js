@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Collapse, IconButton, TableRow, TableCell } from "@mui/material";
+import { Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "../../Pages/layout.css";
@@ -46,16 +46,7 @@ export default function Calendar(props) {
           colSpan={2}
         >
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                marginLeft: "5vw",
-                paddingBottom: "2rem",
-                gap: "1rem",
-                fontSize: "1.5rem",
-              }}
-            >
+            <div className="collapse-section">
               <div className="subtitle">Hours of Operation</div>
               <div
                 style={{
@@ -72,12 +63,12 @@ export default function Calendar(props) {
                     <ul
                       key={idx}
                       className="unordered-list"
-                      style={{ fontSize: "1.5rem" }}
+                      style={{ fontSize: "1.25rem" }}
                     >
                       <strong>{branch.branch_name}</strong>
                       {branch.times.map((time, idx) => {
                         return (
-                          <li key={idx} style={{ fontSize: "1.5rem" }}>
+                          <li key={idx} style={{ fontSize: "1.25rem" }}>
                             {time}
                           </li>
                         );
@@ -106,7 +97,7 @@ export default function Calendar(props) {
                 Satellite Branch- Interactive Teller Machine At NYU Langone
                 Medical Center
               </div>
-              <div className="paragraph" style={{ fontSize: "1.5rem" }}>
+              <div className="paragraph" style={{ fontSize: "1.25rem" }}>
                 <div>
                   ITM Machine is operating by appointment only. To request an
                   appointment, please contact{" "}
@@ -115,7 +106,7 @@ export default function Calendar(props) {
                   </a>
                 </div>
               </div>
-            </Box>
+            </div>
           </Collapse>
         </TableCell>
       </TableRow>

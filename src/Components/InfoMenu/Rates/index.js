@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Box,
   Button,
   Collapse,
   IconButton,
@@ -27,7 +26,7 @@ export default function Rates(props) {
   const [open, setOpen] = useState(true);
   const [idx, setIdx] = useState(0);
 
-  const tabStyle = { color: "purple", fontSize: "1.5rem" };
+  const tabStyle = { color: "purple", fontSize: "1.25rem" };
   const handleIdxChange = (event, newValue) => {
     setIdx(newValue);
   };
@@ -35,20 +34,8 @@ export default function Rates(props) {
   return (
     <>
       <TableRow className="row">
-        <TableCell style={{ width: "10%", padding: 0 }}>
+        <TableCell style={{ padding: 0 }}>
           <div className="button-cell">
-            <div
-              id="rates"
-              style={{
-                position: "relative",
-                top: "-80px",
-                width: 0,
-                height: 0,
-                padding: 0,
-                margin: 0,
-                display: "none",
-              }}
-            />
             <img src={props.rates.icon} className="cell-icon" alt="icon" />
             <IconButton
               aria-label="expand row"
@@ -69,26 +56,13 @@ export default function Rates(props) {
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell
-          sx={{
-            paddingBottom: 0,
-            paddingTop: 0,
-          }}
-          colSpan={6}
-        >
+        <TableCell sx={{ padding: 0 }} colSpan={2}>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                marginLeft: "5vw",
-                paddingBottom: "2rem",
-              }}
-            >
+            <div className="collapse-section">
               {props.rates.content.map((c, idx) => {
                 return (
                   <div key={idx} style={{ padding: "1rem" }}>
-                    <div style={{ fontWeight: 700, fontSize: "1.5rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "1.25rem" }}>
                       {c.subtitle}
                     </div>
                     <div style={props.text}>{c.description}</div>
@@ -107,7 +81,7 @@ export default function Rates(props) {
                           border: 0,
                           borderRadius: 0,
                           color: "white",
-                          fontSize: "1.5rem",
+                          fontSize: "1.25rem",
                           fontWeight: 300,
                           textTransform: "capitalize",
                           marginTop: "0.5rem",
@@ -119,13 +93,19 @@ export default function Rates(props) {
                   </div>
                 );
               })}
-              <Tabs variant="scrollable" value={idx} onChange={handleIdxChange}>
-                <Tab label="Loans" sx={tabStyle} />
-                <Tab label="Savings" sx={tabStyle} />
-                <Tab label="Credit Card" sx={tabStyle} />
-              </Tabs>
-              <div>{tableMapping[idx]}</div>
-            </Box>
+              <div style={{ maxWidth: "1000px" }}>
+                <Tabs
+                  variant="scrollable"
+                  value={idx}
+                  onChange={handleIdxChange}
+                >
+                  <Tab label="Loans" sx={tabStyle} />
+                  <Tab label="Savings" sx={tabStyle} />
+                  <Tab label="Credit Card" sx={tabStyle} />
+                </Tabs>
+                {tableMapping[idx]}
+              </div>
+            </div>
           </Collapse>
         </TableCell>
       </TableRow>

@@ -18,11 +18,14 @@ export default function Navbar() {
       <div className="navbar">
         <div className="burger">
           <IconButton
+            style={{ padding: 0, paddingInline: "0.25rem" }}
             onClick={() => {
               setDrawer(!drawerOpen);
             }}
           >
-            <MenuIcon style={{ fontSize: "5rem", color: "white" }} />
+            <MenuIcon
+              style={{ fontSize: "min(5rem,max(4rem,10vw))", color: "white" }}
+            />
           </IconButton>
           <Drawer
             anchor="left"
@@ -120,7 +123,11 @@ export default function Navbar() {
           >
             <img
               src={icon}
-              style={{ maxWidth: "100%", maxHeight: "100%" }}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "cover",
+              }}
               alt="nyu logo"
             />
           </Button>
