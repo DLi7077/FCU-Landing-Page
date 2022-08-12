@@ -60,7 +60,8 @@ export const InfoMenuContent = {
           "We are excited to announce the Down Payment Assistance Loan will be reinstated on 05/01/2021.",
         redirect: {
           label: "More Information",
-          link: "/",
+          link: "/mortgage-loans",
+          hash: "down-payment-assistance",
         },
       },
       {
@@ -69,17 +70,13 @@ export const InfoMenuContent = {
           "Money Market dividends, Used Auto rates, and schedule of fees will change on 04/01/2021 and are effective 05/01/2021.",
         redirect: {
           label: "Schedule of fees",
-          link: "/",
+          link: "/fee-schedule",
         },
       },
       {
         subtitle: "Beware of Phishing Emails and Texts",
         description:
           "Phishing is when criminals trick individuals by creating and sending fake emails or text messages that appear to be from a real business. Safeguard yourself and do not share your personal financial information in an email or text.",
-        redirect: {
-          label: "Learn More",
-          link: "/",
-        },
       },
     ],
   },

@@ -9,7 +9,7 @@ import {
 const headerStyle = {
   backgroundColor: "primary.main",
   color: "neutral.contrastText",
-  fontSize: "1.5rem",
+  fontSize: "1.25rem",
 };
 const cellStyle = {
   color: "black",
@@ -39,7 +39,7 @@ export default function LoanTable() {
         <TableRow>
           {tCell("Personal")}
           <TableCell rowSpan={21} sx={{ ...cellStyle, maxWidth: "600px" }}>
-            <div style={{ fontSize: "1.5rem" }}>
+            <div style={{ fontSize: "1.25rem" }}>
               Last two paystubs W2 for the past year OR Last 6 months of bank
               statements Last two years of tax returns AND Reference Form
             </div>

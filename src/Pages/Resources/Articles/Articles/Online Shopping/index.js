@@ -17,7 +17,7 @@ export default function index() {
         style={{
           width: "fit-content",
           paddingRight: "1rem",
-          fontSize: "2rem",
+          fontSize: "1.75rem",
         }}
       >
         Why we spend more online
@@ -84,7 +84,7 @@ export default function index() {
         style={{
           width: "fit-content",
           paddingRight: "1rem",
-          fontSize: "2rem",
+          fontSize: "1.75rem",
         }}
       >
         Spending less online

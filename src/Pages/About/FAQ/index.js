@@ -15,7 +15,7 @@ export default function FAQ() {
     <CollapsibleRow
       title="How can I sign up for online banking?"
       content={
-        <div style={{ fontSize: "1.5rem" }}>
+        <div style={{ fontSize: "1.25rem" }}>
           <ol className="list">
             <li>Click on "Online Banking"</li>
             <li>Click on "Enroll"</li>
@@ -38,7 +38,7 @@ export default function FAQ() {
     <CollapsibleRow
       title="How can I sign up for online banking?"
       content={
-        <div style={{ fontSize: "1.5rem" }}>
+        <div style={{ fontSize: "1.25rem" }}>
           <ol className="list">
             <li>Login to our online banking</li>
             <li>Click on "Self Service"</li>
@@ -158,7 +158,7 @@ export default function FAQ() {
       title="How can I make deposits?"
       content={
         <div className="paragraph">
-          <div className="subtitle" style={{ fontSize: "1.5rem" }}>
+          <div className="subtitle" style={{ fontSize: "1.25rem" }}>
             Checks:
           </div>
           <ul className="list">
@@ -169,7 +169,7 @@ export default function FAQ() {
               clearly stated
             </li>
           </ul>
-          <div className="subtitle" style={{ fontSize: "1.5rem" }}>
+          <div className="subtitle" style={{ fontSize: "1.25rem" }}>
             You can deposit cash the following ways:
           </div>
           <ul className="list">

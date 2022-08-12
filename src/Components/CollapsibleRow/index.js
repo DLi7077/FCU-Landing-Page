@@ -53,7 +53,7 @@ export default function CollapsibleRow(props) {
         {arrowPosition === "left" && arrowComponent}
         <TableCell
           sx={{
-            fontSize: "2rem",
+            fontSize: "1.75rem",
             paddingBottom: "0.25rem",
             paddingTop: "0.5rem",
             border: 0,

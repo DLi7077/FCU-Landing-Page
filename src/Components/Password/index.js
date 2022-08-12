@@ -25,7 +25,7 @@ export default function Password(props) {
     }
   };
 
-  const icon_style = { fontSize: "2rem" };
+  const icon_style = { fontSize: "1.75rem" };
 
   const passwordEye = (
     <IconButton
@@ -69,13 +69,13 @@ export default function Password(props) {
           endAdornment: submitButton,
         }}
         inputProps={{
-          style: { fontSize: "2rem", paddingLeft: "0.5rem" },
+          style: { fontSize: "1.75rem", paddingLeft: "0.5rem" },
         }}
         FormHelperTextProps={{
           style: { fontSize: "1rem" },
         }}
         InputLabelProps={{
-          style: { fontSize: "2rem" },
+          style: { fontSize: "1.75rem" },
         }}
       />
     </form>

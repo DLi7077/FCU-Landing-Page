@@ -110,7 +110,7 @@ export default function MobileBanking() {
             a call at (212) 995-3171 between the hours of 9am to 3pm Monday
             through Friday.
           </div>
-          <div className="bold" style={{ fontSize: "1.5rem" }}>
+          <div className="bold" style={{ fontSize: "1.25rem" }}>
             eStatements are also available for your NYU FCU Credit Card.
             Enrollment can be completed on the NYU FCU Credit Card online
             banking site. Contact us for assistance.

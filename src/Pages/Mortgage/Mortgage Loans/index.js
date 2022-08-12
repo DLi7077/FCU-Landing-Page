@@ -118,7 +118,7 @@ export default function MortgageLoans() {
           />
           <CollapsibleRow
             title={
-              <div className="subtitle" style={subtitleOverride}>
+              <div className="subtitle" style={subtitleOverride} id='down-payment-assistance'>
                 Down Payment Assistance Loan
               </div>
             }

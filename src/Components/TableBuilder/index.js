@@ -20,7 +20,7 @@ export default function TableBuilder(props) {
     backgroundColor: "primary.main",
     color: "neutral.contrastText",
     padding: "0.75rem",
-    fontSize: "1.5rem",
+    fontSize: "1.25rem",
   };
   const defaultCellStyle = {
     color: "black",

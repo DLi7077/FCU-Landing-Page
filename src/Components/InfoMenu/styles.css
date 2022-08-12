@@ -8,7 +8,6 @@
   background-color: white;
 }
 .row {
-  background-color: #d4d4d4;
   padding: 0;
   max-height: 90px;
 }
@@ -25,7 +24,22 @@
 }
 .cell-icon {
   width: 6rem;
+  padding: 0.5rem;
 }
 .row-title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+}
+
+.collapse-section {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1vw;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .collapse-section {
+    margin: 0;
+    padding: 0;
+  }
 }

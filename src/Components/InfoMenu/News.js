@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Box,
-  Button,
-  Collapse,
-  IconButton,
-  TableRow,
-  TableCell,
-} from "@mui/material";
+import { Collapse, IconButton, TableRow, TableCell } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "./styles.css";
+import NYUButton from "../Buttons/NYUButton";
 
 /**
  * @description Collapsible row containing news details
@@ -24,20 +18,8 @@ export default function News(props) {
   return (
     <>
       <TableRow className="row">
-        <TableCell style={{ width: "10%", padding: 0 }}>
+        <TableCell style={{ padding: 0 }}>
           <div className="button-cell">
-            <div
-              id="news"
-              style={{
-                position: "relative",
-                top: "-80px",
-                width: 0,
-                height: 0,
-                padding: 0,
-                margin: 0,
-                visibility: "hidden",
-              }}
-            />
             <img src={props.news.icon} className="cell-icon" alt="icon" />
             <IconButton
               aria-label="expand row"
@@ -58,53 +40,28 @@ export default function News(props) {
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell
-          sx={{
-            paddingBottom: 0,
-            paddingTop: 0,
-          }}
-          colSpan={6}
-        >
+        <TableCell sx={{ padding: 0 }} colSpan={2}>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                marginLeft: "5vw",
-                paddingBottom: "2rem",
-              }}
-            >
+            <div className="collapse-section">
               {props.news.content.map((c, idx) => {
                 return (
                   <div key={idx} style={{ padding: "1rem" }}>
-                    <div style={{ fontWeight: 700, fontSize: "1.5rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "1.25rem" }}>
                       {c.subtitle}
                     </div>
                     <div style={props.text}>{c.description}</div>
-
-                    <Button
-                      style={{
-                        backgroundColor: "#CC11DC",
-                        width: "15rem",
-                        height: "3rem",
-                        border: 0,
-                        borderRadius: 0,
-                        color: "white",
-                        fontSize: "1.5rem",
-                        fontWeight: 300,
-                        textTransform: "capitalize",
-                        marginTop: "0.5rem",
-                      }}
-                      onClick={() => {
-                        navigate(c.redirect.link);
-                      }}
-                    >
-                      {c.redirect.label}
-                    </Button>
+                    {c.redirect && (
+                      <NYUButton
+                        label={c.redirect.label}
+                        redirect={c.redirect.link}
+                        hash={c.redirect.hash}
+                        local={true}
+                      />
+                    )}
                   </div>
                 );
               })}
-            </Box>
+            </div>
           </Collapse>
         </TableCell>
       </TableRow>
