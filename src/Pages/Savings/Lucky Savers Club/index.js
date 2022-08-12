@@ -5,13 +5,13 @@ import NYUButton from "../../../Components/Buttons/NYUButton";
 import Lucky_Savers_pdf from "../../../Assets/pdfs/Lucky Savers/Lucky_Savers.pdf";
 import Truth_In_Savings from "../../../Assets/pdfs/Lucky Savers/Truth_In_Savings.pdf";
 import "../../../Pages/layout.css";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function LuckySaversClub() {
   const LUCKY_SAVERS_ENROLLMENT =
     "https://secure.na1.echosign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhBQo9y8lJbK_xCpfSBKDqE1KtS4AOUvFb6MBqiKzbKentXezMPI0Dz4RjiB2fe7Z_M%2A";
   const content = (
     <div className="content-container">
-      <div className="title">Lucky Savers Club</div>
       <div className="content-block">
         <div className="subtitle">NYU Federal Credit Union</div>
         <div className="paragraph">
@@ -95,7 +95,9 @@ export default function LuckySaversClub() {
           </div>
           <div className="part-title">What's the Dividend Rate?</div>
           <div>0.50%</div>
-          <div className="part-title">Why should I open a Lucky Savers Account?</div>
+          <div className="part-title">
+            Why should I open a Lucky Savers Account?
+          </div>
           <div>
             Because it's a win-win situation! And, you can win monthly and
             quarterly prizes! With regular deposits into your Lucky Savers
@@ -108,5 +110,11 @@ export default function LuckySaversClub() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Lucky Savers Club</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

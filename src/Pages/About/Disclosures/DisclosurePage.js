@@ -1,6 +1,5 @@
 import "../../../Pages/layout.css";
 import pdfs from "../../../Constants/About/DisclosurePDF";
-import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 
 const classes = {
@@ -20,9 +19,6 @@ const classes = {
 export default function DisclosurePage() {
   const content = (
     <div className="content-container">
-      <div className="title" style={{ textAlign: "center" }}>
-        Disclosures
-      </div>
       <div className="content-block">
         <div style={classes.pdfGroup}>
           {pdfs.map((info, idx) => {
@@ -39,5 +35,5 @@ export default function DisclosurePage() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  return content;
 }

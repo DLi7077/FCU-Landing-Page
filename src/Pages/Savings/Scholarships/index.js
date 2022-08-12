@@ -1,11 +1,11 @@
 import PageLayout from "../../../Components/PageLayout";
 import JoinButton from "../../../Components/Buttons/JoinButton";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function Scholarships() {
   const content = (
     <div className="content-container">
-      <div className="title">Scholarships</div>
       <div className="content-block">
         <div className="subtitle">The Award</div>
         <div className="paragraph">
@@ -103,5 +103,11 @@ export default function Scholarships() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Scholarships</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

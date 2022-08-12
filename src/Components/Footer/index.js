@@ -3,7 +3,9 @@ import "./styles.css";
 import NyuFcu from "../../Assets/nyu_fcu.svg";
 import Insurance from "../../Assets/insurance.svg";
 import AccessibilityPDF from "../../Assets/pdfs/accessibility.pdf";
-import HashRedirect from "../HashRedirect";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { IconButton } from "@mui/material";
 
 export default function index(props) {
   const addressInfo = [
@@ -84,6 +86,26 @@ export default function index(props) {
         </div>
         <div className="other-section">{otherText}</div>
         <div className="redirect-section">{redirectSection}</div>
+        <div>
+          Made by Devin Li using ReactJS
+          <IconButton>
+            <a
+              href="https://github.com/DLi7077"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon style={{ color: "white", fontSize: "4rem" }} />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href="https://www.linkedin.com/in/devin-li7077/"
+              rel="noreferrer"
+            >
+              <LinkedInIcon style={{ color: "white", fontSize: "4rem" }} />
+            </a>
+          </IconButton>
+        </div>
       </div>
     </div>
   );

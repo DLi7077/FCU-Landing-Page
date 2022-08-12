@@ -28,7 +28,7 @@ export const InfoMenuContent = {
       },
       {
         subtitle: "Events",
-        bullet_points: ["August 13 - SYEP Ends"],
+        bullet_points: ["No events right now..."],
       },
     ],
     hours: [
@@ -81,7 +81,7 @@ export const InfoMenuContent = {
     ],
   },
   rates: {
-    //news content
+    //rates content
     icon: Rates,
     title: "Rates",
     content: [

@@ -5,6 +5,7 @@ import { Table, TableBody } from "@mui/material";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
 import "../../../Pages/layout.css";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import bird_eye from "../bird_eye.png";
 
 /**
  * @description FAQ page, found in /faq
@@ -238,9 +239,17 @@ export default function FAQ() {
     Become_A_Member,
   ];
 
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">
+        FAQ
+      </div>
+    </div>
+  );
+
   const content = (
     <div className="content-container">
-      <div className="title">FAQS</div>
       <div className="content-block">
         <Table>
           <TableBody>
@@ -253,5 +262,5 @@ export default function FAQ() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

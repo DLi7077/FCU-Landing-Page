@@ -2,12 +2,22 @@ import React from "react";
 import PageLayout from "../../../Components/PageLayout";
 import JoinButton from "../../../Components/Buttons/JoinButton";
 import "../../../Pages/layout.css";
+import bird_eye from "../bird_eye.png";
 
 /**
  * @description Join page, found in /join
  * @returns the join page contents
  */
 export default function Join() {
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">
+        Lifetime Membership: Who may join and how?
+      </div>
+    </div>
+  );
+  
   const content = (
     <div className="content-container">
       <div className="title">Lifetime Membership: Who may join and how?</div>
@@ -200,5 +210,5 @@ export default function Join() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img={img} img_content={imgContent} />;
 }

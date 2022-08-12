@@ -1,10 +1,10 @@
 import PageLayout from "../../../Components/PageLayout";
 import LoanTable from "./LoanTable";
+import brick from "../brick.jpg";
 
 export default function LoanSubmission() {
   const content = (
     <div className="content-container">
-      <div className="title">Loan Document Submission</div>
       <div className="content-block">
         <div className="paragraph">
           Thank you for completing your NYU FCU loan application. Please locate
@@ -26,6 +26,11 @@ export default function LoanSubmission() {
       </div>
     </div>
   );
-
-  return <PageLayout content={content} />;
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Loan Document Submission</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

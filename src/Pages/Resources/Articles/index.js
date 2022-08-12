@@ -3,12 +3,12 @@ import PageLayout from "../../../Components/PageLayout";
 import { ARTICLE_CONTENT } from "./Articles";
 import { Button } from "@mui/material";
 import "./styles.css";
+import nice from "../nice.jpg";
 
 export default function Articles() {
   const [article, setArticle] = useState(0);
   const content = (
     <div className="content-container">
-      <div className="title">Articles</div>
       <div className="group-wrapper">
         <div className="article-buttons">
           {ARTICLE_CONTENT.map((article_block, idx) => {
@@ -17,13 +17,13 @@ export default function Articles() {
                 key={idx}
                 onClick={() => {
                   setArticle(idx);
-                  window.scrollTo(0, 0);
+                  window.scrollTo(0, 600);
                 }}
                 style={{
                   width: "100%",
                   display: "flex",
                   fontSize: "1.35rem",
-                  fontWeight:600,
+                  fontWeight: 600,
                   justifyContent: "flex-start",
                   padding: "0.25rem",
                   borderRadius: 0,
@@ -50,5 +50,11 @@ export default function Articles() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Articles</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

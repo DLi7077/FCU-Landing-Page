@@ -11,12 +11,19 @@ import { Table, TableBody } from "@mui/material";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import coopCreditUnionLogo from "../../../Assets/about_us/co-op_credit_union.png";
+import bird_eye from "../bird_eye.png";
 
 /**
  * @description atm locations page, found in /atm-locations
  * @returns the faq page contents
  */
 export default function ATMLocations() {
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">ATM Locations</div>
+    </div>
+  );
   const washingtion_square_atm_list = (
     <div style={{ fontSize: "1.25rem" }}>
       <ul className="unordered-list">
@@ -116,7 +123,6 @@ export default function ATMLocations() {
   // https://co-opcreditunions.org/locator/
   const content = (
     <div className="content-container">
-      <div className="title">ATM Locations</div>
       <div
         style={{
           display: "flex",
@@ -126,22 +132,24 @@ export default function ATMLocations() {
           fontSize: "1.25rem",
         }}
       >
-        Search for a ATM near you with Co-op Credit Unions
-        <NYUButton
-          label={
-            <>
-              <img
-                src={coopCreditUnionLogo}
-                alt="co-op credit union logo"
-                width={40}
-              />
-              Search for an ATM
-            </>
-          }
-          redirect={"https://co-opcreditunions.org/locator/"}
-          backgroundColor="lightGray"
-          color="black"
-        />
+        <div>
+          Search for a ATM near you with Co-op Credit Unions
+          <NYUButton
+            label={
+              <>
+                <img
+                  src={coopCreditUnionLogo}
+                  alt="co-op credit union logo"
+                  width={40}
+                />
+                Search for an ATM
+              </>
+            }
+            redirect={"https://co-opcreditunions.org/locator/"}
+            backgroundColor="lightGray"
+            color="black"
+          />
+        </div>
       </div>
       <div className="content-block">
         <div className="subtitle">SURCHARGE-FREE ACCESS TO:</div>
@@ -209,6 +217,6 @@ export default function ATMLocations() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }
 // https://co-opcreditunions.org/locator/search-results/?loctype=AS&zip=11204

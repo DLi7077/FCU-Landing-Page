@@ -7,6 +7,7 @@ import LifeHappens from "./Tables/LifeHappens";
 import MortagePrep from "./Tables/MortgagePrep";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import JoinButton from "../../../Components/Buttons/JoinButton";
+import water from "../water.jpg";
 
 export default function index() {
   const content = (
@@ -57,5 +58,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={water} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Loan Rates</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

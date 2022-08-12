@@ -1,10 +1,10 @@
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import col from "../col.jpg";
 
 export default function HomebuyerDreamPrograms() {
   const content = (
     <div className="content-container">
-      <div className="title"></div>
       <div className="content-block">
         <div className="subtitle">HOMEBUYER DREAM PROGRAM</div>
         <div className="paragraph">
@@ -49,5 +49,11 @@ export default function HomebuyerDreamPrograms() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={col} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Home Buyer Dream Program</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

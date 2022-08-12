@@ -14,6 +14,7 @@ import LoansTable from "./LoansTable";
 import SavingsTable from "./SavingsTable";
 import CreditCardTable from "./CreditCardTable";
 import "../styles.css";
+import NYUButton from "../../Buttons/NYUButton";
 
 const tableMapping = [<LoansTable />, <SavingsTable />, <CreditCardTable />];
 
@@ -66,30 +67,10 @@ export default function Rates(props) {
                       {c.subtitle}
                     </div>
                     <div style={props.text}>{c.description}</div>
-
-                    <a
-                      href={c.redirect.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <Button
-                        style={{
-                          backgroundColor: "#CC11DC",
-                          width: "15rem",
-                          height: "3rem",
-                          border: 0,
-                          borderRadius: 0,
-                          color: "white",
-                          fontSize: "1.25rem",
-                          fontWeight: 300,
-                          textTransform: "capitalize",
-                          marginTop: "0.5rem",
-                        }}
-                      >
-                        {c.redirect.label}
-                      </Button>
-                    </a>
+                    <NYUButton
+                      label={c.redirect.label}
+                      redirect={c.redirect.link}
+                    />
                   </div>
                 );
               })}

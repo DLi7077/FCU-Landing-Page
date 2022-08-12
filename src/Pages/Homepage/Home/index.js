@@ -14,7 +14,7 @@ const classes = {
     "&:hover": {
       backgroundColor: "rgba(100,100,100,.5)",
     },
-    fontSize: "3rem",
+    fontSize: "min(4rem,max(2rem,3vw))",
     fontWeight: 400,
     borderRadius: 0.5,
     textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",

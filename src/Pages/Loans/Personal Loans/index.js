@@ -1,11 +1,11 @@
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import JoinButton from "../../../Components/Buttons/JoinButton";
+import brick from "../brick.jpg";
 
 export default function PersonalLoans() {
   const content = (
     <div className="content-container">
-      <div className="title">Personal Loans</div>
       <div className="content-block">
         <div className="paragraph">
           To apply for a NYU FCU loan, you must be a member and have a share
@@ -164,5 +164,11 @@ export default function PersonalLoans() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Personal Loans</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

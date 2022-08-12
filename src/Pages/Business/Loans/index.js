@@ -1,9 +1,10 @@
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import walk from "../walk.jpg";
+
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Business Loans</div>
       <div className="content-block">
         <div className="subtitle">Small Business Loans</div>
         <div className="paragraph">
@@ -127,5 +128,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={walk} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Business Loans</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

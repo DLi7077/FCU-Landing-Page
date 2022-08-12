@@ -2,6 +2,7 @@ import PageLayout from "../../../Components/PageLayout";
 import SavingsAccounts from "./SavingsAccounts";
 import CheckingAccounts from "./CheckingAccounts";
 import GeneralMaintenance from "./GeneralMaintenance";
+import water from "../water.jpg";
 
 export default function index() {
   const content = (
@@ -14,9 +15,6 @@ export default function index() {
           gap: "2rem",
         }}
       >
-        <div className="title" style={{ textAlign: "center" }}>
-          Service Charge Schedule
-        </div>
         <div
           style={{
             width: "100%",
@@ -34,6 +32,11 @@ export default function index() {
       </div>
     </div>
   );
-
-  return <PageLayout content={content} />;
+  const img = <img src={water} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Service Charge Schedule</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }
