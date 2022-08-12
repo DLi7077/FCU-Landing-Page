@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nyu-fcu/static/css/main.9db64dd2.css",
-    "main.js": "/nyu-fcu/static/js/main.858e744c.js",
+    "main.css": "/nyu-fcu/static/css/main.9eecfc91.css",
+    "main.js": "/nyu-fcu/static/js/main.6bd6cb0a.js",
     "static/js/787.a0ad0ea4.chunk.js": "/nyu-fcu/static/js/787.a0ad0ea4.chunk.js",
     "static/media/Zelle.mp4": "/nyu-fcu/static/media/Zelle.50c2b727196a9ef57d74.mp4",
     "static/media/2019_annual_report_spread.pdf": "/nyu-fcu/static/media/2019_annual_report_spread.78e7874cc0601049663e.pdf",
@@ -114,12 +114,12 @@
     "static/media/rates.svg": "/nyu-fcu/static/media/rates.dc37f5f7bd6133280a6d3ec0d4a4755b.svg",
     "static/media/newspaper.svg": "/nyu-fcu/static/media/newspaper.e07de7db65cba569d69de333532b5e5a.svg",
     "index.html": "/nyu-fcu/index.html",
-    "main.9db64dd2.css.map": "/nyu-fcu/static/css/main.9db64dd2.css.map",
-    "main.858e744c.js.map": "/nyu-fcu/static/js/main.858e744c.js.map",
+    "main.9eecfc91.css.map": "/nyu-fcu/static/css/main.9eecfc91.css.map",
+    "main.6bd6cb0a.js.map": "/nyu-fcu/static/js/main.6bd6cb0a.js.map",
     "787.a0ad0ea4.chunk.js.map": "/nyu-fcu/static/js/787.a0ad0ea4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9db64dd2.css",
-    "static/js/main.858e744c.js"
+    "static/css/main.9eecfc91.css",
+    "static/js/main.6bd6cb0a.js"
   ]
 }
