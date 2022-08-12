@@ -9,11 +9,11 @@ import {
 const headerStyle = {
   backgroundColor: "primary.main",
   color: "neutral.contrastText",
-  fontSize: "1.25rem",
+  fontSize: "1rem",
 };
 const cellStyle = {
   color: "black",
-  fontSize: "1.25rem",
+  fontSize: "1rem",
   paddingTop: "0.5rem",
   paddingBottom: "0.5rem",
   borderInline: "1px solid purple",
@@ -23,7 +23,7 @@ const tCell = (label) => <TableCell sx={cellStyle}>{label}</TableCell>;
 
 export default function LoanTable() {
   return (
-    <Table>
+    <Table >
       <TableHead>
         <TableRow>
           {headers.map((header, idx) => {

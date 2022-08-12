@@ -3,8 +3,7 @@
 }
 .footer-content {
   color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
   background-color: #232629;
 
   width: 100%;
@@ -17,13 +16,11 @@
   grid-column: 2/4;
   display: flex;
   align-items: center;
-  text-align: center;
-  margin-inline: auto;
+  justify-content: center;
 }
 .address-info {
   grid-column: 4/6;
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -38,6 +35,7 @@
   grid-column: 2/8;
   display: flex;
   flex-direction: column;
+  padding-inline: 2rem;
   align-items: left;
   text-align: left;
   margin-inline: auto;

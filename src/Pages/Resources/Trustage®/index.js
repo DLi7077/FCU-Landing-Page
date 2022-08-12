@@ -4,7 +4,7 @@ import PageLayout from "../../../Components/PageLayout";
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Trustage</div>
+      <div className="title">TruStage®</div>
       <div className="content-block">
         <div className="paragraph">
           <div className="part-title">
