@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nyu-fcu/static/css/main.594512b6.css",
-    "main.js": "/nyu-fcu/static/js/main.d8e934ad.js",
+    "main.css": "/nyu-fcu/static/css/main.9db64dd2.css",
+    "main.js": "/nyu-fcu/static/js/main.858e744c.js",
     "static/js/787.a0ad0ea4.chunk.js": "/nyu-fcu/static/js/787.a0ad0ea4.chunk.js",
     "static/media/Zelle.mp4": "/nyu-fcu/static/media/Zelle.50c2b727196a9ef57d74.mp4",
     "static/media/2019_annual_report_spread.pdf": "/nyu-fcu/static/media/2019_annual_report_spread.78e7874cc0601049663e.pdf",
@@ -78,6 +78,7 @@
     "static/media/Privacy_Policy.pdf": "/nyu-fcu/static/media/Privacy_Policy.c87b00c472ec0f592abe.pdf",
     "static/media/present.jpg": "/nyu-fcu/static/media/present.8ba57c64d8c70dac6172.jpg",
     "static/media/lorie_pelan.jpg": "/nyu-fcu/static/media/lorie_pelan.bcda6b1e5f4458d693f0.jpg",
+    "static/media/accessibility.pdf": "/nyu-fcu/static/media/accessibility.096028417f51c9cae6b2.pdf",
     "static/media/pacifico-latin-400-normal.woff2": "/nyu-fcu/static/media/pacifico-latin-400-normal.f36bb0347eecd87d78af.woff2",
     "static/media/pacifico-latin-ext-400-normal.woff2": "/nyu-fcu/static/media/pacifico-latin-ext-400-normal.e12a2413eb43b100497c.woff2",
     "static/media/pacifico-cyrillic-ext-400-normal.woff2": "/nyu-fcu/static/media/pacifico-cyrillic-ext-400-normal.682f9fb5d72ef074686d.woff2",
@@ -113,12 +114,12 @@
     "static/media/rates.svg": "/nyu-fcu/static/media/rates.dc37f5f7bd6133280a6d3ec0d4a4755b.svg",
     "static/media/newspaper.svg": "/nyu-fcu/static/media/newspaper.e07de7db65cba569d69de333532b5e5a.svg",
     "index.html": "/nyu-fcu/index.html",
-    "main.594512b6.css.map": "/nyu-fcu/static/css/main.594512b6.css.map",
-    "main.d8e934ad.js.map": "/nyu-fcu/static/js/main.d8e934ad.js.map",
+    "main.9db64dd2.css.map": "/nyu-fcu/static/css/main.9db64dd2.css.map",
+    "main.858e744c.js.map": "/nyu-fcu/static/js/main.858e744c.js.map",
     "787.a0ad0ea4.chunk.js.map": "/nyu-fcu/static/js/787.a0ad0ea4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.594512b6.css",
-    "static/js/main.d8e934ad.js"
+    "static/css/main.9db64dd2.css",
+    "static/js/main.858e744c.js"
   ]
 }
