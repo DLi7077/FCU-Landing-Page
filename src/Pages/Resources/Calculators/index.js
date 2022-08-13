@@ -4,6 +4,7 @@ import MultipleDeposit from "./Calcs/MultipleDeposit";
 import SingleDeposit from "./Calcs/SingleDeposit";
 import LoanAffordability from "./Calcs/LoadAffordability";
 import LoanPayment from "./Calcs/LoanPayment";
+import nice from "../nice.jpg";
 
 const calculators = [
   { label: "Multiple Deposit", content: <MultipleDeposit /> },
@@ -14,17 +15,17 @@ const calculators = [
 export default function index() {
   const content = (
     <div className="content-container" style={{ alignItems: "center" }}>
-      <div className="title" style={{ width: "fit-content" }}>
-        Calculators
-      </div>
-      <div
-        className="content-block"
-        style={{ width: "100%" }}
-      >
+      <div className="content-block" style={{ width: "100%" }}>
         <TabGroup tabs={calculators} />
       </div>
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Calculators</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

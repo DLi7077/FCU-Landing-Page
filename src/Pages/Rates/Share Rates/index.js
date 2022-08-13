@@ -6,14 +6,12 @@ import DreamHoliday from "./Tables/DreamHoliday";
 import IRAShare from "./Tables/IRAShare";
 import IRACertificate from "./Tables/IRACertificate";
 import LuckySaversClub from "./Tables/LuckySaversClub";
+import water from "../water.jpg";
 
 export default function index() {
   const content = (
     <div className="content-container">
       <div style={{ paddingInline: "5vw" }}>
-        <div className="title" style={{ textAlign: "center" }}>
-          Share Rates
-        </div>
         <div className="content-block">
           <div className="subtitle">Savings</div>
           <div className="paragraph">
@@ -77,5 +75,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={water} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Share Rates</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

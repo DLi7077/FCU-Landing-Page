@@ -3,13 +3,13 @@ import NYUButton from "../../../Components/Buttons/NYUButton";
 import HomeEquityLoanTable from "./HomeEquityLoanTable";
 import { Table, TableBody } from "@mui/material";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
+import col from "../col.jpg";
 
 export default function MortgageLoans() {
   const subtitleOverride = { border: 0, paddingTop: 0 };
 
   const content = (
     <div className="content-container">
-      <div className="title">Mortgage Loans</div>
       <div className="paragraph">
         To apply for a NYU FCU loan, you must be a member and have a share
         account. <NYUButton label="Check Eligibility" redirect="/join" />
@@ -118,7 +118,11 @@ export default function MortgageLoans() {
           />
           <CollapsibleRow
             title={
-              <div className="subtitle" style={subtitleOverride} id='down-payment-assistance'>
+              <div
+                className="subtitle"
+                style={subtitleOverride}
+                id="down-payment-assistance"
+              >
                 Down Payment Assistance Loan
               </div>
             }
@@ -317,5 +321,11 @@ export default function MortgageLoans() {
       </Table>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={col} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Mortgage Loans</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

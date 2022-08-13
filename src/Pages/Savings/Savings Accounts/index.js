@@ -1,11 +1,11 @@
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import PageLayout from "../../../Components/PageLayout";
 import "../../../Pages/layout.css";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function SavingsAccounts() {
   const content = (
     <div className="content-container">
-      <div className="title">Savings</div>
       <div className="content-block">
         <div className="paragraph">
           <div>
@@ -65,5 +65,11 @@ export default function SavingsAccounts() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Savings Accounts</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

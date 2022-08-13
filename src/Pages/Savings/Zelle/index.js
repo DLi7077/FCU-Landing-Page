@@ -4,6 +4,7 @@ import ZelleVideo from "../../../Assets/zelle/Zelle.mp4";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
 import "./styles.css";
 import { Table, TableBody } from "@mui/material";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 const classes = {
   content: {
@@ -25,9 +26,6 @@ const classes = {
 export default function Zelle() {
   const content = (
     <div className="content-container">
-      <div className="title" style={{ textAlign: "center" }}>
-        Zelle®
-      </div>
       <div className="content-block" style={classes.content}>
         <div className="paragraph" style={{ textAlign: "center" }}>
           <div>
@@ -510,5 +508,11 @@ export default function Zelle() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Zelle®</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

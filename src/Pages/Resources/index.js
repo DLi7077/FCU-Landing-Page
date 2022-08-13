@@ -1,6 +1,5 @@
 import Articles from "./Articles";
 import Calculators from "./Calculators";
-import Events from "./NYUFCU Events";
 import PersonalFinanceTools from "./Personal Finance Tools";
 import ResourceLinks from "./Resource Links";
 import Trustage from "./Trustage®";
@@ -16,11 +15,6 @@ const ResourcePages = [
     path: "/calculators",
     label: "Calculators",
     element: <Calculators />,
-  },
-  {
-    path: "/events",
-    label: "Events",
-    element: <Events />,
   },
   {
     path: "/personal-finance-tools",

@@ -1,5 +1,5 @@
 .img-container {
-  height: 200vh;
+  height: 150vh;
 }
 .visit {
   width: 100%;
@@ -23,7 +23,7 @@
 .button-area {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10rem;
+  margin-top: 4vw;
 }
 .content {
   padding-top: 2rem;
@@ -33,7 +33,7 @@
     left bottom,
     from(rgba(0, 0, 0, 0)),
     to(rgba(0, 0, 0, 1)),
-    color-stop(0.2, #333333)
+    color-stop(0.25, #444)
   );
   width: 100%;
   text-align: center;

@@ -1,14 +1,20 @@
 import "../../../Pages/layout.css";
 import PageLayout from "../../../Components/PageLayout";
 import EmailSubmisson from "../../../Components/EmailSubmission";
+import bird_eye from "../bird_eye.png";
 /**
  * @description Contact Us page, found in /contact-us
  * @returns the Contact Us page contents
  */
 export default function ContactUs() {
+  const img = <img src={bird_eye} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Contact Us</div>
+    </div>
+  );
   const content = (
     <div className="content-container">
-      <div className="title">Contact Us</div>
       <div className="content-block">
         <div className="subtitle">Locations</div>
         <div className="paragraph">
@@ -102,5 +108,5 @@ export default function ContactUs() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

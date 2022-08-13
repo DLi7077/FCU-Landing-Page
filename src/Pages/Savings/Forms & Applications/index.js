@@ -7,6 +7,7 @@ import {
 } from "../../../Constants/Savings/Forms&Applications";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 /**
  *
@@ -41,7 +42,6 @@ function ListGenerator(forms) {
 export default function FormsApplications() {
   const content = (
     <div className="content-container">
-      <div className="title">Forms & Applications</div>
       <div className="content-block">
         <div className="subtitle">Applications</div>
         <div className="paragraph">
@@ -68,5 +68,11 @@ export default function FormsApplications() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Forms & Applications</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

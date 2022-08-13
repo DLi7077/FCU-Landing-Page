@@ -1,5 +1,4 @@
 import PageLayout from "../../../Components/PageLayout";
-import "../../../Pages/layout.css";
 import Password from "../../../Components/Password";
 import PropTypes from "prop-types";
 /**
@@ -42,7 +41,7 @@ function PasswordPrompt(props) {
     </div>
   );
 
-  return <PageLayout content={passwordPrompt} />;
+  return passwordPrompt;  
 }
 
 PasswordPrompt.propTypes = {

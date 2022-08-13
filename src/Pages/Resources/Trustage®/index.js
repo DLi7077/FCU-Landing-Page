@@ -1,10 +1,10 @@
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import PageLayout from "../../../Components/PageLayout";
+import nice from "../nice.jpg";
 
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">TruStage®</div>
       <div className="content-block">
         <div className="paragraph">
           <div className="part-title">
@@ -99,5 +99,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={nice} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">TruStage®</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

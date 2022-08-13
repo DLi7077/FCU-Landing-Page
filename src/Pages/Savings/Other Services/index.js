@@ -6,6 +6,7 @@ import Courtesy_Opt_Form from "../../../Assets/pdfs/Other Services/Courtesy_Opt_
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
 import { Table, TableBody } from "@mui/material";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function OtherServices() {
   const Direct_Deposit = (
@@ -425,7 +426,6 @@ export default function OtherServices() {
 
   const content = (
     <div className="content-container">
-      <div className="title">Other Services</div>
       <Table>
         <TableBody>
           <CollapsibleRow
@@ -468,5 +468,11 @@ export default function OtherServices() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Other Services</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

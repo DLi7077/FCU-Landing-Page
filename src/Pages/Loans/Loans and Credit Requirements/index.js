@@ -2,11 +2,11 @@ import PageLayout from "../../../Components/PageLayout";
 import JoinButton from "../../../Components/Buttons/JoinButton";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import LoanTable from "./LoanTable";
+import brick from "../brick.jpg";
 
 export default function LoansAndCreditRequirements() {
   const content = (
     <div className="content-container">
-      <div className="title">Loans and Credit Application Process</div>
       <div className="content-block">
         <div className="paragraph">
           <div className="bold">
@@ -56,5 +56,11 @@ export default function LoansAndCreditRequirements() {
       </div>
     </div>
   );
-  return <PageLayout content={content} />;
+  const img = <img src={brick} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Loans and Credit Application Process</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

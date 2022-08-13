@@ -7,6 +7,7 @@ import Truth_In_Savings_Policy from "../../../Assets/pdfs/Tradtional IRA/Truth_I
 import IraShareCertificate from "./Tables/IraShareCertificate";
 import { Table, TableBody } from "@mui/material";
 import CollapsibleRow from "../../../Components/CollapsibleRow";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 const headerStyle = {
   backgroundColor: "#91009e",
@@ -25,14 +26,11 @@ const cellStyle = {
 export default function TraditionalIRA() {
   const content = (
     <div className="content-container">
-      <div className="title">
-        Traditional IRA
-        <NYUButton
-          label="Contact Us to Setup your account"
-          redirect="/contact-us"
-          local={true}
-        />
-      </div>
+      <NYUButton
+        label="Contact Us to Setup your account"
+        redirect="/contact-us"
+        local={true}
+      />
       <div className="content-block">
         <div className="subtitle"></div>
         <div className="paragraph">
@@ -254,5 +252,11 @@ export default function TraditionalIRA() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Traditional IRA</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

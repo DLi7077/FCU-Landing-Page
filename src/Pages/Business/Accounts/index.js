@@ -3,6 +3,7 @@ import CollapsibleRow from "../../../Components/CollapsibleRow";
 import { Table, TableBody } from "@mui/material";
 import BusinessMembershipPDF from "../../../Assets/pdfs/Business/Business_Membership.pdf";
 import NYUButton from "../../../Components/Buttons/NYUButton";
+import walk from "../walk.jpg";
 
 const partTitleGenerator = (title) => {
   return (
@@ -14,7 +15,6 @@ const partTitleGenerator = (title) => {
 export default function index() {
   const content = (
     <div className="content-container">
-      <div className="title">Business Accounts</div>
       <div className="content-block">
         <div className="subtitle">Eligibility</div>
         <div className="paragraph">
@@ -254,5 +254,11 @@ export default function index() {
     </div>
   );
 
-  return <PageLayout content={content} />;
+  const img = <img src={walk} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Business Accounts</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }

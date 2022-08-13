@@ -18,7 +18,10 @@ export default function InfoMenu() {
   const { calendar, news, rates } = InfoMenuContent;
 
   return (
-    <div className="content-container" style={{ padding: "1rem" }}>
+    <div
+      className="content-container"
+      style={{ padding: "1rem", overflow: "auto" }}
+    >
       <div style={{ width: "100%" }}>
         <Table sx={{ backgroundColor: "white", width: "100%" }}>
           <TableBody sx={{ margin: 0 }}>

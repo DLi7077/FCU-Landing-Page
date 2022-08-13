@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageLayout from "../../../Components/PageLayout";
 import NYUButton from "../../../Components/Buttons/NYUButton";
 import "../../../Pages/layout.css";
+import cherry_blossoms from "../cherry_blossoms.jpg";
 
 export default function DreamHolidayClub() {
   const FORM_LINK =
@@ -19,7 +20,6 @@ export default function DreamHolidayClub() {
   );
   const content = (
     <div className="content-container">
-      <div className="title">Club Accounts</div>
       <div className="content-block">
         <div className="subtitle">NYU Federal Credit Union</div>
         <div className="paragraph">
@@ -95,6 +95,11 @@ export default function DreamHolidayClub() {
       </div>
     </div>
   );
-
-  return <PageLayout content={content} />;
+  const img = <img src={cherry_blossoms} className="visit" />;
+  const imgContent = (
+    <div className="image-content">
+      <div className="visit-text">Dream & Holiday Club</div>
+    </div>
+  );
+  return <PageLayout content={content} img_content={imgContent} img={img} />;
 }
