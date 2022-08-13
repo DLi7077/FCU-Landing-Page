@@ -254,7 +254,7 @@ export default function index() {
     </div>
   );
 
-  const img = <img src={walk} className="visit" />;
+  const img = <img src={walk} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Business Accounts</div>

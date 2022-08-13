@@ -9,7 +9,7 @@ import bird_eye from "../bird_eye.png";
  * @returns the join page contents
  */
 export default function Join() {
-  const img = <img src={bird_eye} className="visit" />;
+  const img = <img src={bird_eye} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">

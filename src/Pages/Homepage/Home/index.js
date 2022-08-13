@@ -25,7 +25,7 @@ const classes = {
 };
 
 export default function Home(props) {
-  const visit_img = <img src={visit_image} alt="visit" className="visit" />;
+  const visit_img = <img src={visit_image} alt= "page-background" className="visit" />;
   const img_content = (
     <div className="image-content">
       <div className="visit-text">Your stories and your goals</div>

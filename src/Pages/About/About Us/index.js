@@ -56,7 +56,7 @@ const videos = [
 ];
 
 export default function AboutUs() {
-  const img = <img src={bird_eye} className="visit" />;
+  const img = <img src={bird_eye} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">About Us</div>

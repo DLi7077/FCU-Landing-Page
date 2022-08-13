@@ -21,7 +21,6 @@ export default function JoinButton() {
             width: "auto",
             border: 0,
             color: "white",
-            margin: "0.25rem",
             fontSize: "1.25rem",
             fontWeight: 300,
             textTransform: "capitalize",

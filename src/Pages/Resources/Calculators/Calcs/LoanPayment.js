@@ -17,7 +17,6 @@ export default function LoanPayment() {
       annual_rate: interest / 100,
       loan_duration_in_months: months,
     });
-    console.log(payment);
 
     setPayment(updatedResult);
   }, [loanAmount, interest, months]);

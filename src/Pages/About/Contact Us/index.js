@@ -7,7 +7,7 @@ import bird_eye from "../bird_eye.png";
  * @returns the Contact Us page contents
  */
 export default function ContactUs() {
-  const img = <img src={bird_eye} className="visit" />;
+  const img = <img src={bird_eye} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Contact Us</div>

@@ -100,6 +100,7 @@ export default function index(props) {
           <IconButton>
             <a
               href="https://www.linkedin.com/in/devin-li7077/"
+              target="_blank"
               rel="noreferrer"
             >
               <LinkedInIcon style={{ color: "white", fontSize: "4rem" }} />

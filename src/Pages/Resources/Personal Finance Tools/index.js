@@ -38,7 +38,7 @@ export default function index() {
     </div>
   );
 
-  const img = <img src={nice} className="visit" />;
+  const img = <img src={nice} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Personal Finance Tools</div>

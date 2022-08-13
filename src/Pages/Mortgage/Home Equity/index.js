@@ -146,7 +146,7 @@ export default function HomeEquity() {
       </div>
     </div>
   );
-  const img = <img src={col} className="visit" />;
+  const img = <img src={col} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Home Equity</div>

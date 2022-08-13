@@ -164,7 +164,7 @@ export default function PersonalLoans() {
       </div>
     </div>
   );
-  const img = <img src={brick} className="visit" />;
+  const img = <img src={brick} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Personal Loans</div>

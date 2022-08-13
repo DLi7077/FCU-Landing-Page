@@ -90,7 +90,7 @@ export default function Checking() {
     </div>
   );
 
-  const img = <img src={cherry_blossoms} className="visit" />;
+  const img = <img src={cherry_blossoms} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Checking</div>

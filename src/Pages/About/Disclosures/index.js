@@ -6,7 +6,7 @@ import DisclosurePage from "./DisclosurePage";
 import bird_eye from "../bird_eye.png";
 
 export default function Disclosures() {
-  const img = <img src={bird_eye} className="visit" />;
+  const img = <img src={bird_eye} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Disclosures</div>

@@ -239,7 +239,7 @@ export default function FAQ() {
     Become_A_Member,
   ];
 
-  const img = <img src={bird_eye} className="visit" />;
+  const img = <img src={bird_eye} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">

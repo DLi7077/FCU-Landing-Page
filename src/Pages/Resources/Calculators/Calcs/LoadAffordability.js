@@ -8,7 +8,6 @@ export default function LoanAffordability() {
   const [desiredAmount, setDesiredAmount] = useState(0);
   const [interest, setInterest] = useState(0);
   const [months, setMonths] = useState(1);
-
   const [loanAmount, setLoanAmount] = useState(0);
 
   useEffect(() => {

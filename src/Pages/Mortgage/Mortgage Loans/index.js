@@ -321,7 +321,7 @@ export default function MortgageLoans() {
       </Table>
     </div>
   );
-  const img = <img src={col} className="visit" />;
+  const img = <img src={col} alt= "page-background" className="visit" />;
   const imgContent = (
     <div className="image-content">
       <div className="visit-text">Mortgage Loans</div>
