@@ -18,12 +18,12 @@
   color: white;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 .visit-text {
   font-size: max(6vw, 4rem);
   text-align: center;
   backdrop-filter: blur(2px);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, .5);
 }
 .fancy-text {
   font-size: max(7vw, 6rem);
@@ -39,8 +39,8 @@
     gap: 2rem;
   }
 }
-@media only screen and (max-width:400px){
-  .image-content{
+@media only screen and (max-width: 400px) {
+  .image-content {
     margin-top: 5rem;
   }
 }
