@@ -8,7 +8,7 @@
 }
 .image-content {
   position: relative;
-  margin-top: 100px;
+  margin-top: 4vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -29,18 +29,18 @@
   font-size: max(7vw, 6rem);
 }
 .button-area {
+  display: flex;
   margin-top: 0;
-  height:fit-content
+  height: fit-content;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 1200px) {
   .button-area {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
   }
 }
-@media only screen and (max-width: 405px) {
-  .image-content {
-    margin-top: 120px;
+@media only screen and (max-width:400px){
+  .image-content{
+    margin-top: 5rem;
   }
 }
